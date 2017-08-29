@@ -2,7 +2,7 @@ nav li:after {
     content: '·';
     width: 13px;
     height: 13px;
-    display: block;
+    display: list-item;
     margin-top: -40px;
     float: right;
     font-size: 20pt;
@@ -10,4 +10,30 @@ nav li:after {
 }
 nav li:last-child:after {
     content: '';
+}
+#partners li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#partners img {
+    max-width: 100px;
+    max-height: 100px;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+}
+footer.navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+main {
+    padding-bottom: 250px;
 }

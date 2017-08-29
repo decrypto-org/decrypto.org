@@ -8,58 +8,87 @@
         <link rel="stylesheet" href="css/master.css">
     </head>
     <body>
-        <div class='container'>
-            <header class='text-center'>
-                <h1>de·crypto</h1>
-                <nav>
-                    <ul class='nav justify-content-center'>
-                        <li class='navitem'><a href='https://'></a><a href='' class='nav-link'><a href='https://projects'>projects</a></a><a href='https://'></a></li>
-                        <li class='navitem'><a href='https://'></a><a href='' class='nav-link'><a href='https://team'>team</a></a><a href='https://'></a></li>
-                        <li class='navitem'><a href='https://'></a><a href='' class='nav-link'><a href='https://partners'>partners</a></a><a href='https://'></a></li>
-                    </ul>
-                </nav>
-                <p>decentralized academic research group
-                   for the political applications of cryptography</p>
-                <a href=''>Meet the team</a>
-            </header>
-            <main>
-                <section id='projects' class='row text-center'>
-                    <article class='col'>
-                        <h2>Trust is Risk</h2>
-                        <p>
+        <header class='text-center'>
+            <h1>de·crypto</h1>
+            <nav>
+                <ul class='nav justify-content-center'>
+                    <li class='navitem'>
+                        <a class='nav-link' href=''>projects</a>
+                    </li>
+                    <li class='navitem'>
+                        <a class='nav-link' href=''>team</a>
+                    </li>
+                    <li class='navitem'>
+                        <a class='nav-link' href=''>partners</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>decentralized academic research group
+               for the political applications of cryptography</p>
+            <a href='' class='btn btn-primary'>Meet the team</a>
+        </header>
+        <main class='container'>
+            <section id='projects' class='card-group text-center'>
+                <article class='card'>
+                    <div class='card-body'>
+                        <h2 class='card-title'><a href=''>Trust is Risk</a></h2>
+                        <p class='card-text'>
                             A decentralized financial trust platform
                         </p>
-                        <a>Learn more</a>
-                    </article>
-                    <article class='col'>
-                        <h2><a href='https://mpOTR'>mpOTR</a></h2>
-                        <p>
+                        <a href='#' class='btn btn-primary'>Learn more</a>
+                    </div>
+                </article>
+                <article class='card'>
+                    <div class='card-body'>
+                        <h2 class='card-title'><a href='https://mpOTR'>mpOTR</a></h2>
+                        <p class='card-text'>
                             A group end-to-end encrypted chat
                         </p>
-                        <a>Learn more</a>
-                    </article>
-                    <article class='col'>
-                        <h2><a href='https://Rupture'>Rupture</a></h2>
-                        <p>
+                        <a href='#' class='btn btn-primary'>Learn more</a>
+                    </div>
+                </article>
+                <article class='card'>
+                    <div class='card-body'>
+                        <h2 class='card-title'><a href='https://Rupture'>Rupture</a></h2>
+                        <p class='card-text'>
                             Compression attacks and defences
                         </p>
-                        <a>Learn more</a>
-                    </article>
-                </section>
-                <section id='partners'>
-                    <p>Our research is supported by our wonderful partners.</p>
-                    <ul class='row text-center'>
-                        <li class='col'><a href='https://iohk.io'>IOHK</a></li>
-                        <li class='col'><a href='https://ob1.io'>OB1</a></li>
-                        <li class='col'><a href='https://frostwire.com'>Frostwire</a></li>
-                    </ul>
-                    <p>
-                        We're always looking for new funding partnerships.
-                        <button type='button' name='button'>Support us</button>
-                    </p>
-                </section>
-            </main>
-        </div>
+                        <a href='#' class='btn btn-primary'>Learn more</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer id='partners' class='text-center navbar navbar-dark bg-dark text-white flex-column'>
+            <p class='row'>Our research is supported by our wonderful partners.</p>
+            <ul class='row text-center'>
+                <li class='col flex-column'>
+                    <a href='https://iohk.io'>
+                        <img src='images/iohk.png' alt='IOHK' class='img-fluid align-self-center' />
+                    </a>
+                </li>
+                <li class='col'>
+                    <a href='https://ob1.io'>
+                        <img src='images/openbazaar.png' alt='OB1' class='img-fluid align-self-center' />
+                    </a>
+                </li>
+                <li class='col'>
+                    <a href='https://frostwire.com'>
+                        <img src='images/frostwire.png' alt='FrostWire' class='img-fluid align-self-center' />
+                    </a>
+                </li>
+                <li class='col'>
+                    <a href='https://frostwire.com'>
+                        <img src='images/erc.png' alt='ERC' class='img-fluid align-self-center' />
+                    </a>
+                </li>
+            </ul>
+            <div class='row'>
+                <p>
+                    We're always looking for new funding partnerships.
+                    <a href='#' class='btn btn-primary'>Support us</a>
+                </p>
+            </div>
+        </footer>
         <script src='node_modules/jquery/dist/jquery.min.js' charset='utf-8'><a href='https://'></a></script>
         <script src='node_modules/popper.js/dist/popper.min.js' charset='utf-8'><a href='https://'></a></script>
         <script src='node_modules/bootstrap/dist/js/bootstrap.min.js' charset='utf-8'><a href='https://'></a></script>
