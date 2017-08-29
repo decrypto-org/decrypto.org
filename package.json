@@ -1,0 +1,14 @@
+{
+  "name": "decrypto.org",
+  "version": "1.0.0",
+  "description": "A decentralized blockchains lab",
+  "main": "index.js",
+  "repository": "https://github.com/decrypto-org",
+  "author": "Decrypto Lab",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-4": "^4.0.0",
+    "jquery": ">=3.0.0",
+    "popper.js": "^1.11.0"
+  }
+}
