@@ -1,14 +1,20 @@
-nav li:after {
-    content: '·';
-    width: 13px;
-    height: 13px;
-    display: list-item;
-    margin-top: -40px;
-    float: right;
-    font-size: 20pt;
-    padding-left: 10px;
-}
+#header-nav{
 
-nav li:last-child:after {
+  li{
+    position: relative;
+  }
+
+  li:after{
+    content: '·';
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    line-height: 1;
+  }
+
+  li:last-child:after{
     content: '';
+  }
 }
