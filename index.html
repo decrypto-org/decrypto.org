@@ -4,13 +4,12 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <title>de·crypto</title>
-        <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css' />
-        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href='css/main.css'>
     </head>
     <body>
-        <header class='text-center'>
+        <header id="header" class='text-center'>
             <h1>de·crypto</h1>
-            <nav>
+            <nav id="header-nav">
                 <ul class='nav justify-content-center'>
                     <li class='navitem'>
                         <a class='nav-link' href=''>projects</a>
@@ -58,39 +57,39 @@
                 </article>
             </section>
         </main>
-        <footer id='partners' class='text-center navbar navbar-dark bg-dark text-white flex-column'>
-            <p class='row'>Our research is supported by our wonderful partners.</p>
-            <ul class='row text-center'>
-                <li class='col flex-column'>
-                    <a href='https://iohk.io'>
-                        <img src='images/iohk.png' alt='IOHK' class='img-fluid align-self-center' />
-                    </a>
-                </li>
-                <li class='col'>
-                    <a href='https://ob1.io'>
-                        <img src='images/openbazaar.png' alt='OB1' class='img-fluid align-self-center' />
-                    </a>
-                </li>
-                <li class='col'>
-                    <a href='https://frostwire.com'>
-                        <img src='images/frostwire.png' alt='FrostWire' class='img-fluid align-self-center' />
-                    </a>
-                </li>
-                <li class='col'>
-                    <a href='https://frostwire.com'>
-                        <img src='images/erc.png' alt='ERC' class='img-fluid align-self-center' />
-                    </a>
-                </li>
-            </ul>
-            <div class='row'>
-                <p>
-                    We're always looking for new funding partnerships.
-                    <a href='#' class='btn btn-primary'>Support us</a>
-                </p>
+        <footer id='footer' class='text-center bg-dark text-white fixed-bottom'>
+            <p>Our research is supported by our wonderful partners.</p>
+            <nav id="partners">
+              <ul class='nav justify-content-center d-flex align-items-center'>
+                  <li class='navitem'>
+                      <a href='https://iohk.io' class='nav-link'>
+                          <img src='images/iohk.png' alt='IOHK' class='img-fluid align-self-center' />
+                      </a>
+                  </li>
+                  <li class='navitem'>
+                      <a href='https://ob1.io' class='nav-link'>
+                          <img src='images/openbazaar.png' alt='OB1' class='img-fluid align-self-center' />
+                      </a>
+                  </li>
+                  <li class='navitem'>
+                      <a href='https://frostwire.com' class='nav-link'>
+                          <img src='images/frostwire.png' alt='FrostWire' class='img-fluid align-self-center' />
+                      </a>
+                  </li>
+                  <li class='navitem'>
+                      <a href='https://frostwire.com' class='nav-link'>
+                          <img src='images/erc.png' alt='ERC' class='img-fluid align-self-center' />
+                      </a>
+                  </li>
+              </ul>
+            </nav>
+            <div class='support'>
+                <p>We're always looking for new funding partnerships.</p>
+                <a href='#' class='btn btn-primary'>Support us</a>
             </div>
         </footer>
-        <script src='node_modules/jquery/dist/jquery.min.js' charset='utf-8'><a href='https://'></a></script>
-        <script src='node_modules/popper.js/dist/popper.min.js' charset='utf-8'><a href='https://'></a></script>
-        <script src='node_modules/bootstrap/dist/js/bootstrap.min.js' charset='utf-8'><a href='https://'></a></script>
+        <script src='js/jquery.min.js' charset='utf-8'></script>
+        <script src='js/popper.min.js' charset='utf-8'></script>
+        <script src='js/bootstrap.min.js' charset='utf-8'></script>
     </body>
 </html>
