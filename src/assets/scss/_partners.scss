@@ -1,0 +1,13 @@
+#partners {
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
