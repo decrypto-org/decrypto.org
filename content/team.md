@@ -28,4 +28,14 @@ name = "Aggelos Kiayias"
 institution = "University of Edinburgh & IOHK"
 github = "solegga"
 twitter = "sol3gga"
+
+[[extra.members]]
+name = "Orestis Konstantinidis"
+institution = "University of Athens"
+github = "orestkon"
+
+[[extra.members]]
+name = "Roman Brunner"
+institution = "ETH Zürich"
+github = "jogli5er"
 +++
