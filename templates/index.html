@@ -15,15 +15,15 @@
                for the political applications of cryptography</p>
             <nav id='header-nav'>
                 <ul class='nav justify-content-center'>
+                    {% for pg in config.extra.ourpages %}
                     <li class='navitem'>
-                        <a class='nav-link' href='/'>projects</a>
+                        {% if current_path == pg.path %}
+                        <strong class='nav-link'>{{ pg.title }}</strong>
+                        {% else %}
+                        <a class='nav-link' href='/{{ pg.path }}'>{{ pg.title }}</a>
+                        {% endif %}
                     </li>
-                    <li class='navitem'>
-                        <a class='nav-link' href='/team'>team</a>
-                    </li>
-                    <li class='navitem'>
-                        <a class='nav-link' href='/partners'>partners</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </nav>
             <!-- <p>

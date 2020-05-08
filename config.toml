@@ -12,4 +12,14 @@ highlight_code = false
 build_search_index = false
 
 [extra]
-# Put all your custom variables here
+[[extra.ourpages]]
+title = "projects"
+path = ""
+
+[[extra.ourpages]]
+title = "team"
+path = "team/"
+
+[[extra.ourpages]]
+title = "partners"
+path = "partners/"
