@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<center>
+    <p>Our research is supported by our wonderful partners.</p>
+    <nav id='partners'>
+        <ul class='nav justify-content-center d-flex align-items-center'>
+            {% for partner in page.extra.partners %}
+            <li class='navitem'>
+                <a href='{{ partner.url }}' class='nav-link'>
+                    <img src='/images/{{ partner.id }}.png' alt='IOHK' class='img-fluid align-self-center' />
+                    <p>{{ partner.name }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</center>
+{% endblock content %}
