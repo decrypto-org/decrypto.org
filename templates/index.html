@@ -30,6 +30,7 @@
             </p> -->
         </header>
         <main class='container'>
+            {% block content %}
             <section id='projects' class='card-group text-center'>
                 <article class='card'>
                     <div class='card-body'>
@@ -59,6 +60,7 @@
                     </div>
                 </article>
             </section>
+            {% endblock content %}
         </main>
         <footer id='footer' class='text-center bg-dark text-white fixed-bottom'>
             <p>Our research is supported by our wonderful partners.</p>
