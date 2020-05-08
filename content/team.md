@@ -38,4 +38,9 @@ github = "orestkon"
 name = "Roman Brunner"
 institution = "ETH Zürich"
 github = "jogli5er"
+
+[[extra.members]]
+name = "Zeta Avarikioti"
+institution = "ETH Zürich"
+github = "zetavar"
 +++
