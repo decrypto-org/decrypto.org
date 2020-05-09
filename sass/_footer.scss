@@ -10,17 +10,4 @@
       display: inline-block;
     }
   }
-
-  .nav-link {
-    position: relative;
-  }
-
-  .nav-link::before {
-    content: ' ';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    box-shadow: 0 0 100px 51px $cadet;
-    z-index: -1;
-  }
 }
