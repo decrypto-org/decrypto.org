@@ -46,6 +46,6 @@ github = "zetavar"
 
 [[extra.members]]
 name = "Christos Nasikas"
-institution = "Elastic"
+institution = "University of Athens"
 github = "cnasikas"
 +++
