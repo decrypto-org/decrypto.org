@@ -78,7 +78,7 @@ scholar = "SYtibuEAAAAJ"
 [[extra.members]]
 first_name = "Alexei"
 last_name = "Zamyatin"
-institution = "Imperial College London"
+institution = "Imperial College London & interlay.io"
 github = "alexeiZamyatin"
 scholar = "BJDPyu0AAAAJ"
 +++
