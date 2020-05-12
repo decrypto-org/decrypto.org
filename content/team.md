@@ -7,6 +7,7 @@ last_name = "Karantias"
 institution = "IOHK"
 github = "gtklocker"
 twitter = "gtklocker"
+scholar = "osuix3YAAAAJ"
 
 [[extra.members]]
 first_name = "Andrianna"
@@ -26,6 +27,7 @@ last_name = "Zindros"
 institution = "University of Athens"
 github = "dionyziz"
 twitter = "dionyziz"
+scholar = "vR8HlYMAAAAJ"
 
 [[extra.members]]
 first_name = "Aggelos"
@@ -33,6 +35,7 @@ last_name = "Kiayias"
 institution = "University of Edinburgh & IOHK"
 github = "solegga"
 twitter = "sol3gga"
+scholar = "P_L_vZAAAAAJ"
 
 [[extra.members]]
 first_name = "Orestis"
@@ -51,6 +54,7 @@ first_name = "Zeta"
 last_name = "Avarikioti"
 institution = "ETH Zürich"
 github = "zetavar"
+scholar = "GNLHrL0AAAAJ"
 
 [[extra.members]]
 first_name = "Christos"
@@ -69,10 +73,12 @@ first_name = "Dimitris"
 last_name = "Karakostas"
 institution = "University of Edinburgh & IOHK"
 github = "dimkarakostas"
+scholar = "SYtibuEAAAAJ"
 
 [[extra.members]]
 first_name = "Alexei"
 last_name = "Zamyatin"
 institution = "Imperial College London"
 github = "alexeiZamyatin"
+scholar = "BJDPyu0AAAAJ"
 +++
