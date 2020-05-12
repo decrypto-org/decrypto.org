@@ -1,4 +1,5 @@
 +++
+title = "Team"
 template = "team.html"
 
 [[extra.members]]
