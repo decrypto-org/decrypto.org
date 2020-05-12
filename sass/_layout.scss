@@ -15,8 +15,15 @@ body {
   background-color: rgba(255,255,255,0.15);
 }
 
-a, .text-muted {
-  filter: invert(100%);
+a {
+  color: #80bdff;
+}
+a:hover {
+  color: #d3e8ff;
+}
+
+.text-muted {
+  color: #bbbbbb !important;
 }
 
 main {
