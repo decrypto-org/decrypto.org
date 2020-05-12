@@ -63,4 +63,10 @@ first_name = "Orfeas Stefanos"
 last_name = "Thyfronitis Litos"
 institution = "University of Edinburgh"
 github = "OrfeasLitos"
+
+[[extra.members]]
+first_name = "Dimitris"
+last_name = "Karakostas"
+institution = "University of Edinburgh & IOHK"
+github = "dimkarakostas"
 +++
