@@ -82,4 +82,12 @@ last_name = "Zamyatin"
 institution = "Imperial College London & interlay.io"
 github = "alexeiZamyatin"
 scholar = "BJDPyu0AAAAJ"
+
+[[extra.members]]
+first_name = "Vitalis"
+last_name = "Salis"
+institution = "National Technical University of Athens"
+github = "vitsalis"
+scholar = "3jyfLY4AAAAJ"
+twitter = "vitsalis"
 +++
