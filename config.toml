@@ -23,3 +23,7 @@ path = "team/"
 [[extra.ourpages]]
 title = "partners"
 path = "partners/"
+
+[[extra.ourpages]]
+title = "seminar"
+path = "seminar/"
