@@ -5,7 +5,6 @@
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <title>{% if page.title %}{{ page.title }} | {% endif %}de·crypto</title>
         <link rel='icon' href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>'>
-        <link href='https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap' rel='stylesheet'>
         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
         <link rel='stylesheet' href='{{ get_url(path='main.css', trailing_slash=false) }}'>
     </head>
@@ -64,9 +63,14 @@
             </section>
             {% endblock content %}
         </main>
-        <footer id='footer' class='text-center bg-dark text-white fixed-bottom'>
+        <footer id='footer' class='text-center fixed-bottom'>
             <div class='support'>
-                <p>We're always looking for new funding partnerships.</p>
+                <p>Decrypto is an independent research group focused
+                   on blockchain research.<br />We are affiliated with the
+                   University of Athens, University of Edinburgh, ETH Zurich,
+                   and many other universities around the world.
+                </p>
+                <!-- <p>We're always looking for new funding partnerships.</p> -->
                 <!-- <a href='#' class='btn btn-primary'>Support us</a> -->
             </div>
         </footer>

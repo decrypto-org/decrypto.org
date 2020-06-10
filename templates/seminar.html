@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<p>
+The Decrypto Seminar is a weekly seminar in which members of our group
+present a research-level topic in the area of blockchain research. The
+presentations take place online every Wednesday and last about one hour,
+with discussion and questions following. The presenter is an expert on
+the topic they are presenting, usually of the co-authors
+of the paper presented or a software engineer in the implementation discussed. The presentations concern peer reviewed and
+upcoming research papers, technical proposals, experiments and measurements,
+as well as implementation and engineering topics on blockchains and
+cryptocurrencies.
+</p>
+
+{% for seminar in page.extra.seminars %}
+<div class='card mb-3'>
+    <div class='card-header'>
+        {{ seminar.date }}, {{ seminar.time }}
+    </div>
+    <div class='card-body'>
+        <h5>{{ seminar.title }}</h5>
+        <h6>{{ seminar.author }}, {{ seminar.affiliation }}</h6>
+        <p class='card-text'>
+            {{ seminar.abstract }}
+        </p>
+        {% if seminar.link %}
+            <a class='btn btn-primary' href='{{ seminar.link }}'>Join seminar</a>
+            {% if seminar.password %}
+            <div style='padding-top: 1em; color: #555; font-size: 90%'>Password: {{ seminar.password }}</div>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}

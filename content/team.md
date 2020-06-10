@@ -72,7 +72,7 @@ github = "OrfeasLitos"
 [[extra.members]]
 first_name = "Dimitris"
 last_name = "Karakostas"
-institution = "University of Edinburgh & IOHK"
+institution = "University of Edinburgh"
 github = "dimkarakostas"
 scholar = "SYtibuEAAAAJ"
 
