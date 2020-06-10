@@ -26,7 +26,7 @@ In this talk we give an intuitive exposition of the Lightning protocol and its v
 
 [[extra.seminars]]
 author = "Stelios Daveas"
-affiliation = "University of Atthens"
+affiliation = "University of Athens"
 date = "17 Jun 2020"
 time = "12:00pm Greek time"
 title = "Implementing a practical superlight Bitcoin client"
@@ -53,7 +53,7 @@ BRICK provides sub-second latency because it does not employ heavy-weight consen
 author = "Christos Nasikas"
 affiliation = "University of Athens"
 date = "1 Jul 2020"
-time = "12:00pm Greek titme"
+time = "12:00pm Greek time"
 title = "The Smart Contract Development Ecosystem in Ethereum"
 abstract = ""
 
