@@ -18,3 +18,16 @@ body {
 main {
   padding-bottom: 250px;
 }
+
+table thead {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+table td {
+  padding: 2px;
+}
+
+table tr {
+  padding: 5px 0;
+}
