@@ -28,7 +28,7 @@ cryptocurrencies.
         {% if seminar.link %}
             <a class='btn btn-primary' href='{{ seminar.link }}'>Join seminar</a>
             {% if seminar.password %}
-            <span>Password: {{ seminar.password }}</span>
+            <div style='padding-top: 1em; color: #555; font-size: 90%'>Password: {{ seminar.password }}</div>
             {% endif %}
         {% endif %}
     </div>
