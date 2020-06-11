@@ -70,8 +70,8 @@ author = "Orfeas Stefanos Thyfronitis Litos"
 affiliation = "University of Edinburgh"
 date = "15 Jul 2020"
 time = "10:00am UK time"
-title = "Leveraging Payment Channels to Create Lightning Network Routes"
-abstract = ""
+title = "From Channels to Network: Off-chain Multi-hop Payments in Lightning"
+abstract = "Building upon the ideas of pairwise Lightning channels, we explore Hashed TimeLocked Contracts (HTLCs), the technique that allows atomic payments along paths over channels. This technique expands the individual channels into an interconnected network of nodes that can freely exchange funds off-chain with any reachable node with minimal latency. Nodes can now transact even without having a direct channel, thus the need for a complete graph between nodes is relaxed -- just a connected graph with sufficient capacity is enough for any party to transact with any other. We will understand why parties along a payment path can trustlessly and securely send, receive, or facilitate the transfer of value. We will also discuss a number of tricks and optimizations in LN that turn the theoretical ideas of payment channels into a practical, incentivized, deployable and robust layer-2 payment network."
 
 [[extra.seminars]]
 author = "Andrianna Polydouri"
