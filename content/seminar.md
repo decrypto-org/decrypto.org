@@ -23,6 +23,7 @@ abstract = """
 The high latency and low throughput of Bitcoin constitute two fundamental barriers for its wider adoption. The Lightning Network, an overlay protocol that can be run on top of Bitcoin, provides the most comprehensive solution to those issues by enabling unlimited off-chain payments with minimal latency between parties that share a payment channel.
 In this talk we give an intuitive exposition of the Lightning protocol and its various capabilities. We describe the steps needed for setting up, using, and closing a 2-party Lightning channel, arguing that they are secure. We discuss the single disadvantage of Lightning compared to using the blockchain directly, namely that parties have to actively sync with the blockchain often to avoid losing funds. Finally, we highlight one of the most important -- and complex -- features of Lightning, multi-hop payments: leveraging well-understood cryptographic primitives and finely-tuned timeouts, a buyer can pay a seller even if they don't have an open channel between them.
 """
+slides = "https://github.com/OrfeasLitos/PaymentChannels/raw/6b41c60375b0f51df93328942bc88f0a844cbb1a/ln-slides/slides.pdf"
 
 [[extra.seminars]]
 author = "Stelios Daveas"
