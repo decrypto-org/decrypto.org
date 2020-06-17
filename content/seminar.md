@@ -34,8 +34,6 @@ title = "Implementing a practical superlight Bitcoin client"
 abstract = """
 During the last years, significant effort has been put into enabling blockchain interoperability. Towards this goal, a new generation of verifiers have emerged called superlight clients. We focus on Non-Interactive Proofs of Proof of Work (NIPoPoW) superblock protocol, and we discuss a gas-efficient implementation for the verification of NIPoPoWs in Solidity. In particular, we explore patterns and techniques that considerably reduce gas consumption, and may also have applications to other smart contracts. We introduce a pattern that we term "hash-and-resubmit" that eliminates persistent storage almost entirely, leading to significant increase of performance. Furthermore, we alleviate the burden of expensive on-chain operations, which we transfer off-chain, and we make use of an optimistic schema that replaces functionalities of linear complexity with constant operations. Lastly, we make a cryptoeconomic analysis, and set concrete values regarding the cost of usage of our client.
 """
-link = "https://zoom.us/j/94211753122?pwd=bjBaN2VVM3crTWx1WUlqS284aWs1QT09"
-password = "0DnpNM"
 
 [[extra.seminars]]
 author = "Zeta Avarikioti"
