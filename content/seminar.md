@@ -66,7 +66,11 @@ affiliation = "IOHK"
 date = "8 Jul 2020"
 time = "12:00pm Greek time"
 title = "A Taxonomy of Cryptocurrency Wallets"
-abstract = ""
+abstract = """
+The primary function of a cryptocurrency is money transfer between individuals. The wallet is the software that facilitates such transfers. Wallets are nowadays ubiquitous in the cryptocurrency space and a cryptocurrency is usually supported by many wallets. Despite that, the functionality of wallets has never been formally defined. Additionally, the mechanisms employed by the many wallets in the wild remain hidden in their respective codebases.
+
+In this work we provide the first definition of a cryptocurrency wallet, which we model as a client to a server, or set of servers. We provide a distinction of wallets in various categories, based on whether they work for transparent or private cryptocurrencies, what trust assumptions they require, their performance and their communication overhead. For each type of wallet we provide a description of its client and server protocols. Additionally, we explore the superlight wallets and describe their difference to superlight clients that have appeared in recent literature. We demonstrate how new wallet protocols can be produced by combining concepts from existing protocols. Finally we evaluate the performance and security characteristics of all wallet protocols and compare them.
+"""
 
 [[extra.seminars]]
 author = "Orfeas Stefanos Thyfronitis Litos"
