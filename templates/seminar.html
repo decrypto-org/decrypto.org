@@ -15,10 +15,21 @@ cryptocurrencies.
 </p>
 
 {% for seminar in page.extra.seminars %}
+{% set iso_date = seminar.date ~ "T" ~ seminar.time ~ seminar.timezone %}
+{% set seminar_tag = seminar.date | replace(from="-", to="_") %}
 <div class='card mb-3'>
-    <div class='card-header'>
-        {{ seminar.date }}, {{ seminar.time }}
-    </div>
+    <p class='card-header'>
+        {{ iso_date | date(format="%d %B %Y %I:%M%P", timezone="Europe/London") }} {{ "(GMT) /" }}
+        <span id="{{ seminar_tag }}-time">{{ iso_date }}</span>
+        <script type="text/javascript">
+            const utcTime{{ seminar_tag }} = new Date(Date.parse(document.getElementById("{{ seminar_tag }}-time").innerHTML))
+            const earlyOrLate{{ seminar_tag }} = (utcTime{{ seminar_tag }}.getHours() < 12) ? "am" : "pm"
+            const hours{{ seminar_tag }} = (utcTime{{ seminar_tag }}.getHours() == 12) ? 12 : utcTime{{ seminar_tag }}.getHours() % 12
+            const timeString{{ seminar_tag }} = hours{{ seminar_tag }} + ":" + utcTime{{ seminar_tag }}.getMinutes().toString().padStart(2, "0")
+                + earlyOrLate{{ seminar_tag }} + " (" + Intl.DateTimeFormat().resolvedOptions().timeZone + ")"
+            document.getElementById("{{ seminar_tag }}-time").innerHTML = timeString{{ seminar_tag }}
+        </script>
+    </p>
     <div class='card-body'>
         <h5>{{ seminar.title }}</h5>
         <h6>{{ seminar.author }}, {{ seminar.affiliation }}</h6>

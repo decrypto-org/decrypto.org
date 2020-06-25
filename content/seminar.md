@@ -4,8 +4,9 @@ template = "seminar.html"
 [[extra.seminars]]
 author = "Dionysis Zindros"
 affiliation = "University of Athens"
-date = "3 Jun 2020"
-time = "10:00am Greek time"
+date = "2020-05-03"
+time = "11:00:00"
+timezone = "+02:00"
 title = "Introduction to NIPoPoWs"
 abstract = """
 In this seminar, we will give an overview of Non-Interactive Proofs of Proof-of-Work and describe
@@ -16,8 +17,9 @@ necessary to upgrade a blockchain for superblock support.
 [[extra.seminars]]
 author = "Orfeas Stefanos Thyfronitis Litos"
 affiliation = "University of Edinburgh"
-date = "10 Jun 2020"
-time = "10:00am UK time"
+date = "2020-05-10"
+time = "10:00:00"
+timezone = "+00:00"
 title = "What is the Lightning Network?"
 abstract = """
 The high latency and low throughput of Bitcoin constitute two fundamental barriers for its wider adoption. The Lightning Network, an overlay protocol that can be run on top of Bitcoin, provides the most comprehensive solution to those issues by enabling unlimited off-chain payments with minimal latency between parties that share a payment channel.
@@ -28,8 +30,9 @@ slides = "https://github.com/OrfeasLitos/PaymentChannels/raw/6b41c60375b0f51df93
 [[extra.seminars]]
 author = "Stelios Daveas"
 affiliation = "University of Athens"
-date = "17 Jun 2020"
-time = "12:00pm Greek time"
+date = "2020-05-17"
+time = "12:00:00"
+timezone = "+02:00"
 title = "Implementing a practical superlight Bitcoin client"
 abstract = """
 During the last years, significant effort has been put into enabling blockchain interoperability. Towards this goal, a new generation of verifiers have emerged called superlight clients. We focus on Non-Interactive Proofs of Proof of Work (NIPoPoW) superblock protocol, and we discuss a gas-efficient implementation for the verification of NIPoPoWs in Solidity. In particular, we explore patterns and techniques that considerably reduce gas consumption, and may also have applications to other smart contracts. We introduce a pattern that we term "hash-and-resubmit" that eliminates persistent storage almost entirely, leading to significant increase of performance. Furthermore, we alleviate the burden of expensive on-chain operations, which we transfer off-chain, and we make use of an optimistic schema that replaces functionalities of linear complexity with constant operations. Lastly, we make a cryptoeconomic analysis, and set concrete values regarding the cost of usage of our client.
@@ -41,8 +44,9 @@ slides = "https://slides.com/steliosntaveas/nipopow-verifier/"
 [[extra.seminars]]
 author = "Zeta Avarikioti"
 affiliation = "ETH Zürich"
-date = "24 Jun 2020"
-time = "12:00pm Swiss time"
+date = "2020-05-24"
+time = "12:00:00"
+timezone = "+01:00"
 title = "Brick: Asynchronous Payment Channels"
 abstract = """
 Off-chain protocols (channels) are a promising solution to the scalability and privacy challenges of blockchain payments. Current proposals, however, require synchrony assumptions to preserve the safety of a channel, leaking to an adversary the exact amount of time needed to control the network for a successful attack.
@@ -55,8 +59,9 @@ slides = "/slides/brick.pdf"
 [[extra.seminars]]
 author = "Christos Nasikas"
 affiliation = "University of Athens"
-date = "1 Jul 2020"
-time = "12:00pm Greek time"
+date = "2020-06-01"
+time = "12:00:00"
+timezone = "+02:00"
 title = "The Smart Contract Development Ecosystem in Ethereum"
 abstract = """
 In this presentation, we will give an overview of how we can develop Ethereum Dapps using the
@@ -73,8 +78,9 @@ link = "https://elastic.zoom.us/j/92323049755"
 [[extra.seminars]]
 author = "Kostis Karantias"
 affiliation = "IOHK"
-date = "8 Jul 2020"
-time = "12:00pm Greek time"
+date = "2020-06-08"
+time = "12:00:00"
+timezone = "+02:00"
 title = "A Taxonomy of Cryptocurrency Wallets"
 abstract = """
 The primary function of a cryptocurrency is money transfer between individuals. The wallet is the software that facilitates such transfers. Wallets are nowadays ubiquitous in the cryptocurrency space and a cryptocurrency is usually supported by many wallets. Despite that, the functionality of wallets has never been formally defined. Additionally, the mechanisms employed by the many wallets in the wild remain hidden in their respective codebases.
@@ -85,16 +91,18 @@ In this work we provide the first definition of a cryptocurrency wallet, which w
 [[extra.seminars]]
 author = "Orfeas Stefanos Thyfronitis Litos"
 affiliation = "University of Edinburgh"
-date = "15 Jul 2020"
-time = "10:00am UK time"
+date = "2020-06-15"
+time = "10:00:00"
+timezone = "+00:00"
 title = "From Channels to Network: Off-chain Multi-hop Payments in Lightning"
 abstract = "Building upon the ideas of pairwise Lightning channels, we explore Hashed TimeLocked Contracts (HTLCs), the technique that allows atomic payments along paths over channels. This technique expands the individual channels into an interconnected network of nodes that can freely exchange funds off-chain with any reachable node with minimal latency. Nodes can now transact even without having a direct channel, thus the need for a complete graph between nodes is relaxed -- just a connected graph with sufficient capacity is enough for any party to transact with any other. We will understand why parties along a payment path can trustlessly and securely send, receive, or facilitate the transfer of value. We will also discuss a number of tricks and optimizations in LN that turn the theoretical ideas of payment channels into a practical, incentivized, deployable and robust layer-2 payment network."
 
 [[extra.seminars]]
 author = "Andrianna Polydouri"
 affiliation = "University of Athens"
-date = "22 Jul 2020"
-time = "12:00pm Greek time"
+date = "2020-06-22"
+time = "12:00:00"
+timezone = "+02:00"
 title = "A Study on Superlight Blockchain Clients under Velvet Fork"
 abstract = """
 In this presentation, we investigate how a blockchain can be upgraded to support superblock clients without a soft fork. We show that it is possible to implement the needed changes without modifying the consensus protocol and by requiring only a minority of miners to upgrade, a process termed a velvet fork in the literature. While previous work conjectured that Superblock and FlyClient clients can be safely deployed using velvet forks as-is, we show that previous constructions are insecure. We describe a novel class of attacks, called chain-sewing, which arise in the velvet fork setting: an adversary can cut-and-paste portions of various chains from independent forks, sewing them together to fool a superlight client into accepting a false claim. We show how previous velvet fork constructions can be attacked via chain-sewing. Next we put forth the first provably secure velvet superblock client construction which we show  secure against adversaries that are bounded by 1/3 of the upgraded honest miner population.
@@ -103,8 +111,9 @@ In this presentation, we investigate how a blockchain can be upgraded to support
 [[extra.seminars]]
 author = "Dimitris Karakostas"
 affiliation = "University of Edinburgh"
-date = "29 Jul 2020"
-time = "10:00am UK time"
+date = "2020-06-29"
+time = "10:00:00"
+timezone = "+00:00"
 title = "(Title to be determined)"
 abstract = """
 """
