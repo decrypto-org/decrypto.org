@@ -10,10 +10,11 @@ function utcTimeFromString(string) {
 }
 
 function showLocalSeminarTimes() {
-    const spans = document.querySelectorAll("span")
-    for (span of spans) {
-        if ("date" in span.dataset) {
-            span.innerHTML = prettyTimeFromUtcTime(utcTimeFromString(span.dataset["date"]))
+    const datetimes = document.querySelectorAll("time")
+    for (datetime of datetimes) {
+        if ("datetime" in datetime.dataset) {
+            datetime.innerHTML =
+                prettyTimeFromUtcTime(utcTimeFromString(datetime.dataset["datetime"]))
         }
     }
 }
