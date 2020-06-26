@@ -58,7 +58,16 @@ affiliation = "University of Athens"
 date = "1 Jul 2020"
 time = "12:00pm Greek time"
 title = "The Smart Contract Development Ecosystem in Ethereum"
-abstract = ""
+abstract = """
+In this presentation, we will give an overview of how we can develop Ethereum Dapps using the
+tools availbable in the Ethereum ecosystem. We will discuss Truffle, a Javascript library and
+framework used to develop and test smart contracts in Solidity; Ganache and Ganache-cli, a
+local blockchain system which can be used to deploy smart contracts locally for developmpent purposes;
+Metamask, a browser-based wallet which is particularly user-friendly when used with DApps;
+and, finally, Remix, a web-based editor for your Solidity code which includes powerful
+syntax checking and debugging capabilities. During the talk, we will include live demonstrations
+and show you how these tools can be used together to develop complete and robust DApps.
+"""
 
 [[extra.seminars]]
 author = "Kostis Karantias"
