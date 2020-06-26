@@ -5,16 +5,12 @@ function prettyTimeFromUtcTime(utcTime) {
         + earlyOrLate + " (" + Intl.DateTimeFormat().resolvedOptions().timeZone + ")"
 }
 
-function utcTimeFromString(string) {
-    return new Date(Date.parse(string))
-}
-
 function showLocalSeminarTimes() {
     const datetimes = document.querySelectorAll("time")
     for (datetime of datetimes) {
         if ("datetime" in datetime.dataset) {
             datetime.innerHTML =
-                prettyTimeFromUtcTime(utcTimeFromString(datetime.dataset["datetime"]))
+                prettyTimeFromUtcTime(new Date(datetime.dataset["datetime"]))
         }
     }
 }
