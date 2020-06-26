@@ -50,7 +50,7 @@ In this talk, we discuss BRICK, the first payment channel that remains secure un
 The core idea is to incorporate the conflict resolution process within the channel by introducing a rational committee of external parties, called wardens. Hence, if a party wants to close a channel unilaterally, it can only get the committee's approval for the last valid state.
 BRICK provides sub-second latency because it does not employ heavy-weight consensus. Instead, BRICK uses consistent broadcast to announce updates and close the channel, a light-weight abstraction that is powerful enough to preserve safety and liveness to any rational parties.
 """
-link = "https://ethz.zoom.us/j/2191029633"
+slides = "/slides/brick.pdf"
 
 [[extra.seminars]]
 author = "Christos Nasikas"
