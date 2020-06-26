@@ -8,7 +8,7 @@ function prettyTimeFromUtcTime(utcTime) {
 function showLocalSeminarTimes() {
     const datetimes = document.querySelectorAll("time")
     for (datetime of datetimes) {
-        if ("datetime" in datetime.dataset) {
+        if (datetime.getAttribute("data-datetime")) {
             datetime.innerHTML =
                 prettyTimeFromUtcTime(new Date(datetime.dataset["datetime"]))
         }
