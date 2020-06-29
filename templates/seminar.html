@@ -19,7 +19,7 @@ cryptocurrencies.
 
 <div class='card mb-3'>
     <p class='card-header'>
-        {{ iso_datetime | date(format="%d %B %Y %I:%M%P", timezone="Europe/London") }} (GMT) /
+        {{ iso_datetime | date(format="%B %e, %Y, %I:%M %p", timezone="UTC") }} UTC
         <time data-datetime="{{ iso_datetime }}"></time>
     </p>
     <div class='card-body'>

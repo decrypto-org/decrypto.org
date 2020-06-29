@@ -1,18 +1,18 @@
-function prettyTimeFromUtcTime(utcTime) {
-    const earlyOrLate = (utcTime.getHours() < 12) ? "am" : "pm"
-    const hours = (utcTime.getHours() == 12) ? 12 : utcTime.getHours() % 12
-    return hours + ":" + utcTime.getMinutes().toString().padStart(2, "0")
-        + earlyOrLate + " (" + Intl.DateTimeFormat().resolvedOptions().timeZone + ")"
-}
-
-function showLocalSeminarTimes() {
+function showLocalDates() {
     const datetimes = document.querySelectorAll("time")
     for (datetime of datetimes) {
         if (datetime.getAttribute("data-datetime")) {
-            datetime.innerHTML =
-                prettyTimeFromUtcTime(new Date(datetime.dataset["datetime"]))
+            datetime.innerHTML = " / " + new Date(datetime.dataset["datetime"])
+                .toLocaleString(undefined, {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit",
+                    timeZoneName: "short"
+                })
         }
     }
 }
 
-showLocalSeminarTimes()
+showLocalDates()
