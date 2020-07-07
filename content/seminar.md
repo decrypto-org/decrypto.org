@@ -68,7 +68,6 @@ and, finally, Remix, a web-based editor for your Solidity code which includes po
 syntax checking and debugging capabilities. During the talk, we will include live demonstrations
 and show you how these tools can be used together to develop complete and robust DApps.
 """
-link = "https://elastic.zoom.us/j/92323049755"
 
 [[extra.seminars]]
 author = "Kostis Karantias"
