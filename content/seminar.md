@@ -81,6 +81,8 @@ The primary function of a cryptocurrency is money transfer between individuals. 
 
 In this work we provide the first definition of a cryptocurrency wallet, which we model as a client to a server, or set of servers. We provide a distinction of wallets in various categories, based on whether they work for transparent or private cryptocurrencies, what trust assumptions they require, their performance and their communication overhead. For each type of wallet we provide a description of its client and server protocols. Additionally, we explore the superlight wallets and describe their difference to superlight clients that have appeared in recent literature. We demonstrate how new wallet protocols can be produced by combining concepts from existing protocols. Finally we evaluate the performance and security characteristics of all wallet protocols and compare them.
 """
+link = "https://zoom.us/j/97956074940?pwd=dnp4MlBCak5OL3ZQc2wwMSsvZG1sQT09"
+password = "2ij5Hi"
 
 [[extra.seminars]]
 author = "Orfeas Stefanos Thyfronitis Litos"
