@@ -15,10 +15,13 @@ cryptocurrencies.
 </p>
 
 {% for seminar in page.extra.seminars %}
+{% set iso_datetime = seminar.date ~ "T" ~ seminar.time ~ seminar.timezone %}
+
 <div class='card mb-3'>
-    <div class='card-header'>
-        {{ seminar.date }}, {{ seminar.time }}
-    </div>
+    <p class='card-header'>
+        {{ iso_datetime | date(format="%B %e, %Y, %I:%M %p", timezone="UTC") }} UTC
+        <time data-datetime="{{ iso_datetime }}"></time>
+    </p>
     <div class='card-body'>
         <h5>{{ seminar.title }}</h5>
         <h6>{{ seminar.author }}, {{ seminar.affiliation }}</h6>
@@ -37,5 +40,6 @@ cryptocurrencies.
     </div>
 </div>
 {% endfor %}
+<script type="text/javascript" src="/scripts/local-time.js"></script>
 
 {% endblock content %}
