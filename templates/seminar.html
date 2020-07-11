@@ -37,6 +37,9 @@ cryptocurrencies.
         {% if seminar.slides %}
             <a class='btn btn-primary' href='{{ seminar.slides }}'>Get slides</a>
         {% endif %}
+        {% if seminar.video %}
+            <a class='btn btn-primary' href='{{ seminar.video }}'>Watch video</a>
+        {% endif %}
     </div>
 </div>
 {% endfor %}
