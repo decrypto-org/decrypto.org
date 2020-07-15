@@ -120,4 +120,13 @@ title = "(Title to be determined)"
 abstract = """
 """
 
+[[extra.seminars]]
+author = "Alex Chepurnoy"
+affiliation = "Ergo Platform"
+date = "2020-09-02"
+time = "12:00:00"
+timezone = "+03:00"
+title = "(Title to be determined)"
+abstract = """
+"""
 +++
