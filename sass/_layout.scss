@@ -8,7 +8,7 @@ body {
   padding-top: 50px;
   min-height: 100%;
   color: #282828;
-  background-color: rgba(255,255,255,0.9);
+  background-color: $background;
 }
 
 .card {
@@ -17,4 +17,31 @@ body {
 
 main {
   padding-bottom: 250px;
+}
+
+h3 {
+  text-align: center;
+  margin: 1em 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
+h3::before, h3::after {
+  content: "";
+  background-color: #ccc;
+  width: 50%;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+h3::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h3::after {
+  left: 0.5em;
+  margin-right: -50%;
 }

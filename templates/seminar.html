@@ -1,6 +1,9 @@
 {% extends "index.html" %}
 
 {% block content %}
+{% set now_year  = now() | date(format="%Y") | int %}
+{% set now_month = now() | date(format="%m") | int %}
+{% set now_date  = now() | date(format="%d") | int %}
 
 <p>
 The Decrypto Seminar is a weekly seminar in which members of our group
@@ -14,35 +17,82 @@ as well as implementation and engineering topics on blockchains and
 cryptocurrencies.
 </p>
 
-{% for seminar in page.extra.seminars %}
-{% set iso_datetime = seminar.date ~ "T" ~ seminar.time ~ seminar.timezone %}
+<h3>Upcoming Seminars</h3>
 
-<div class='card mb-3'>
-    <p class='card-header'>
-        {{ iso_datetime | date(format="%B %e, %Y, %I:%M %p", timezone="UTC") }} UTC
-        <time data-datetime="{{ iso_datetime }}"></time>
-    </p>
-    <div class='card-body'>
-        <h5>{{ seminar.title }}</h5>
-        <h6>{{ seminar.author }}, {{ seminar.affiliation }}</h6>
-        <p class='card-text'>
-            {{ seminar.abstract }}
+{% for seminar in page.extra.seminars %}
+    {% set iso_datetime = seminar.date ~ "T" ~ seminar.time ~ seminar.timezone %}
+    {% set seminar_year  = iso_datetime | date(format="%Y") | int %}
+    {% set seminar_month = iso_datetime | date(format="%m") | int %}
+    {% set seminar_date  = iso_datetime | date(format="%d") | int %}
+    {% set past = seminar_year < now_year
+       or seminar_year == now_year and seminar_month < now_month
+       or seminar_year == now_year and seminar_month == now_month and seminar_date < now_date %}
+    {% if past %}
+        {% continue %}
+    {% endif %}
+    <div class='card mb-3'>
+        <p class='card-header'>
+            {{ iso_datetime | date(format="%B %e, %Y, %I:%M %p", timezone="UTC") }} UTC
+            <time data-datetime="{{ iso_datetime }}"></time>
         </p>
-        {% if seminar.link %}
-            <a class='btn btn-primary' href='{{ seminar.link }}'>Join seminar</a>
-            {% if seminar.password %}
-            <div style='padding-top: 1em; color: #555; font-size: 90%'>Password: {{ seminar.password }}</div>
+        <div class='card-body'>
+            <h5>{{ seminar.title }}</h5>
+            <h6>{{ seminar.author }}, {{ seminar.affiliation }}</h6>
+            <p class='card-text'>
+                {{ seminar.abstract }}
+            </p>
+            {% if seminar.link %}
+                <a class='btn btn-primary' href='{{ seminar.link }}'>Join seminar</a>
+                {% if seminar.password %}
+                <div style='padding-top: 1em; color: #555; font-size: 90%'>Password: {{ seminar.password }}</div>
+                {% endif %}
             {% endif %}
-        {% endif %}
-        {% if seminar.slides %}
-            <a class='btn btn-primary' href='{{ seminar.slides }}'>Get slides</a>
-        {% endif %}
-        {% if seminar.video %}
-            <a class='btn btn-primary' href='{{ seminar.video }}'>Watch video</a>
-        {% endif %}
+            {% if seminar.slides %}
+                <a class='btn btn-primary' href='{{ seminar.slides }}'>Get slides</a>
+            {% endif %}
+            {% if seminar.slides %}
+                <a class='btn btn-primary' href='{{ seminar.slides }}'>Get slides</a>
+            {% endif %}
+            {% if seminar.video %}
+                <a class='btn btn-primary' href='{{ seminar.video }}'>Watch video</a>
+            {% endif %}
+        </div>
     </div>
-</div>
 {% endfor %}
+
+<h3>Past Seminars</h3>
+
+{% for seminar in page.extra.seminars %}
+    {% set iso_datetime = seminar.date ~ "T" ~ seminar.time ~ seminar.timezone %}
+    {% set seminar_year  = iso_datetime | date(format="%Y") | int %}
+    {% set seminar_month = iso_datetime | date(format="%m") | int %}
+    {% set seminar_date  = iso_datetime | date(format="%d") | int %}
+    {% set past = seminar_year < now_year
+       or seminar_year == now_year and seminar_month < now_month
+       or seminar_year == now_year and seminar_month == now_month and seminar_date < now_date %}
+    {% if not past %}
+        {% continue %}
+    {% endif %}
+    <div class='card mb-3'>
+        <p class='card-header'>
+            {{ iso_datetime | date(format="%B %e, %Y", timezone="UTC") }}
+        </p>
+        <div class='card-body'>
+            <h5>{{ seminar.title }}</h5>
+            <h6>{{ seminar.author }}, {{ seminar.affiliation }}</h6>
+            <p class='card-text'>
+                {{ seminar.abstract }}
+            </p>
+            {% if seminar.slides %}
+                <a class='btn btn-primary' href='{{ seminar.slides }}'>Get slides</a>
+            {% endif %}
+            {% if seminar.video %}
+                <a class='btn btn-primary' href='{{ seminar.video }}'>Watch video</a>
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}
+
 <script type="text/javascript" src="/scripts/local-time.js"></script>
 
 {% endblock content %}
