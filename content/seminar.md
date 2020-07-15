@@ -108,6 +108,8 @@ title = "A Study on Superlight Blockchain Clients under Velvet Fork"
 abstract = """
 In this presentation, we investigate how a blockchain can be upgraded to support superblock clients without a soft fork. We show that it is possible to implement the needed changes without modifying the consensus protocol and by requiring only a minority of miners to upgrade, a process termed a velvet fork in the literature. While previous work conjectured that Superblock and FlyClient clients can be safely deployed using velvet forks as-is, we show that previous constructions are insecure. We describe a novel class of attacks, called chain-sewing, which arise in the velvet fork setting: an adversary can cut-and-paste portions of various chains from independent forks, sewing them together to fool a superlight client into accepting a false claim. We show how previous velvet fork constructions can be attacked via chain-sewing. Next we put forth the first provably secure velvet superblock client construction which we show  secure against adversaries that are bounded by 1/3 of the upgraded honest miner population.
 """
+link = "https://zoom.us/j/97897775065?pwd=VkxBSGlMMTZvb0M3NlJUOUxxQ0lYUT09"
+password = "8Lq4cF"
 
 [[extra.seminars]]
 author = "Dimitris Karakostas"
