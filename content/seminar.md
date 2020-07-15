@@ -96,8 +96,7 @@ time = "10:00:00"
 timezone = "+01:00"
 title = "From Channels to Network: Off-chain Multi-hop Payments in Lightning"
 abstract = "Building upon the ideas of pairwise Lightning channels, we explore Hashed TimeLocked Contracts (HTLCs), the technique that allows atomic payments along paths over channels. This technique expands the individual channels into an interconnected network of nodes that can freely exchange funds off-chain with any reachable node with minimal latency. Nodes can now transact even without having a direct channel, thus the need for a complete graph between nodes is relaxed -- just a connected graph with sufficient capacity is enough for any party to transact with any other. We will understand why parties along a payment path can trustlessly and securely send, receive, or facilitate the transfer of value. We will also discuss a number of tricks and optimizations in LN that turn the theoretical ideas of payment channels into a practical, incentivized, deployable and robust layer-2 payment network."
-link = "https://zoom.us/j/94793734002?pwd=dmpDc25FOTJWWGhBbndjeStZbzVZUT09"
-password = "7y5wdU"
+slides = "https://github.com/OrfeasLitos/PaymentChannels/raw/99c4b21303dd403d40054e36596a93b9cc1f1001/ln-slides/multi-hop-slides.pdf"
 
 [[extra.seminars]]
 author = "Andrianna Polydouri"
