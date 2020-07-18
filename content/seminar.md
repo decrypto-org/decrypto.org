@@ -118,8 +118,9 @@ affiliation = "University of Edinburgh"
 date = "2020-07-29"
 time = "10:00:00"
 timezone = "+01:00"
-title = "(Title to be determined)"
+title = "Reward Distribution Mechanisms in Cryptocurrencies"
 abstract = """
+In this talk we look into different mechanisms for distributing rewards in participants of cryptocurrency systems. We distinguish the mechanisms in two broad categories, granular and epoch-based. We describe Bitcoin's mechanism, analyze the intuition behind its design choices, and cover well-known incentive-based attacks. Next, we compare it to the lesser known epoch-based paradigm, evaluating how the latter solves Bitcoin's shortcomings and describing the new hazard that it introduces.
 """
 
 [[extra.seminars]]
