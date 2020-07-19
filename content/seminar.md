@@ -96,8 +96,8 @@ time = "10:00:00"
 timezone = "+01:00"
 title = "From Channels to Network: Off-chain Multi-hop Payments in Lightning"
 abstract = "Building upon the ideas of pairwise Lightning channels, we explore Hashed TimeLocked Contracts (HTLCs), the technique that allows atomic payments along paths over channels. This technique expands the individual channels into an interconnected network of nodes that can freely exchange funds off-chain with any reachable node with minimal latency. Nodes can now transact even without having a direct channel, thus the need for a complete graph between nodes is relaxed -- just a connected graph with sufficient capacity is enough for any party to transact with any other. We will understand why parties along a payment path can trustlessly and securely send, receive, or facilitate the transfer of value. We will also discuss a number of tricks and optimizations in LN that turn the theoretical ideas of payment channels into a practical, incentivized, deployable and robust layer-2 payment network."
-link = "https://zoom.us/j/94793734002?pwd=dmpDc25FOTJWWGhBbndjeStZbzVZUT09"
-password = "7y5wdU"
+slides = "https://github.com/OrfeasLitos/PaymentChannels/raw/99c4b21303dd403d40054e36596a93b9cc1f1001/ln-slides/multi-hop-slides.pdf"
+video = "https://vimeo.com/439191722"
 
 [[extra.seminars]]
 author = "Andrianna Polydouri"
@@ -109,6 +109,8 @@ title = "A Study on Superlight Blockchain Clients under Velvet Fork"
 abstract = """
 In this presentation, we investigate how a blockchain can be upgraded to support superblock clients without a soft fork. We show that it is possible to implement the needed changes without modifying the consensus protocol and by requiring only a minority of miners to upgrade, a process termed a velvet fork in the literature. While previous work conjectured that Superblock and FlyClient clients can be safely deployed using velvet forks as-is, we show that previous constructions are insecure. We describe a novel class of attacks, called chain-sewing, which arise in the velvet fork setting: an adversary can cut-and-paste portions of various chains from independent forks, sewing them together to fool a superlight client into accepting a false claim. We show how previous velvet fork constructions can be attacked via chain-sewing. Next we put forth the first provably secure velvet superblock client construction which we show  secure against adversaries that are bounded by 1/3 of the upgraded honest miner population.
 """
+link = "https://zoom.us/j/97897775065?pwd=VkxBSGlMMTZvb0M3NlJUOUxxQ0lYUT09"
+password = "8Lq4cF"
 
 [[extra.seminars]]
 author = "Dimitris Karakostas"
@@ -116,8 +118,28 @@ affiliation = "University of Edinburgh"
 date = "2020-07-29"
 time = "10:00:00"
 timezone = "+01:00"
+title = "Reward Distribution Mechanisms in Cryptocurrencies"
+abstract = """
+In this talk we look into different mechanisms for distributing rewards in participants of cryptocurrency systems. We distinguish the mechanisms in two broad categories, granular and epoch-based. We describe Bitcoin's mechanism, analyze the intuition behind its design choices, and cover well-known incentive-based attacks. Next, we compare it to the lesser known epoch-based paradigm, evaluating how the latter solves Bitcoin's shortcomings and describing the new hazard that it introduces.
+"""
+
+[[extra.seminars]]
+author = "Alex Chepurnoy"
+affiliation = "Ergo Platform"
+date = "2020-09-02"
+time = "12:00:00"
+timezone = "+03:00"
 title = "(Title to be determined)"
 abstract = """
 """
 
+[[extra.seminars]]
+author = "George Kadianakis"
+affiliation = "University of Athens, Tor Project"
+date = "2020-09-09"
+time = "12:00:00"
+timezone = "+03:00"
+title = "(Title to be determined)"
+abstract = """
+"""
 +++
