@@ -139,7 +139,7 @@ affiliation = "University of Athens, Tor Project"
 date = "2020-09-09"
 time = "12:00:00"
 timezone = "+03:00"
-title = "(Title to be determined)"
+title = "Proving Work Over Onions: PoW applications in Tor"
 abstract = """
 """
 +++
