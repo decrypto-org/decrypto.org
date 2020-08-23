@@ -118,8 +118,13 @@ affiliation = "Ergo Platform"
 date = "2020-09-02"
 time = "12:00:00"
 timezone = "+03:00"
-title = "(Title to be determined)"
+title = "Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts"
 abstract = """
+Centralized pools and renting of mining power are considered as sources of possible censorship threats and even 51% attacks for decentralized cryptocurrencies. Non-outsourceable Proof-of-Work schemes have been proposed to tackle these issues. However, tenets in the folklore say that such schemes could potentially be bypassed by using escrow mechanisms.
+
+We consider how to bypass non-outsourceable Proof-of-Work schemes using collateralized smart contracts. Our approach allows for that if the underlying blockchain platform supports smart contracts in a sufficiently advanced language. In particular, the language should allow access to the PoW solution.
+
+At a high level, our approach requires the miner to lock collateral covering the reward amount and protected by a smart contract that acts as an escrow. The smart contract has logic that allows the pool to collect the collateral as soon as the miner collects any block reward. We propose two variants of the approach depending on when the collateral is bound to the block solution. Using this, we show how to bypass previously proposed non-outsourceable Proof-of-Work schemes (with the notable exception for strong non-outsourceable schemes) and show how to build mining pools for such schemes.
 """
 
 [[extra.seminars]]
