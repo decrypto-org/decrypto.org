@@ -126,6 +126,8 @@ We consider how to bypass non-outsourceable Proof-of-Work schemes using collater
 
 At a high level, our approach requires the miner to lock collateral covering the reward amount and protected by a smart contract that acts as an escrow. The smart contract has logic that allows the pool to collect the collateral as soon as the miner collects any block reward. We propose two variants of the approach depending on when the collateral is bound to the block solution. Using this, we show how to bypass previously proposed non-outsourceable Proof-of-Work schemes (with the notable exception for strong non-outsourceable schemes) and show how to build mining pools for such schemes.
 """
+link = "https://zoom.us/j/91667302522?pwd=MXlxTTByOVRDUlc3ZHFSWlc1UW14UT09"
+password = "0rz4VE"
 
 [[extra.seminars]]
 author = "George Kadianakis"
