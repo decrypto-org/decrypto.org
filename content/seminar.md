@@ -130,23 +130,24 @@ link = "https://zoom.us/j/91667302522?pwd=MXlxTTByOVRDUlc3ZHFSWlc1UW14UT09"
 password = "0rz4VE"
 
 [[extra.seminars]]
-author = "George Kadianakis"
-affiliation = "University of Athens, Tor Project"
+author = "Dimitris Karakostas"
+affiliation = "University of Edinburgh"
 date = "2020-09-09"
 time = "12:00:00"
 timezone = "+03:00"
-title = "Proving Work Over Onions: PoW applications in Tor"
-abstract = """
-"""
-
-[[extra.seminars]]
-author = "Dimitris Karakostas"
-affiliation = "University of Edinburgh"
-date = "2020-09-16"
-time = "10:00:00"
-timezone = "+01:00"
 title = "Reward Distribution Mechanisms in Cryptocurrencies"
 abstract = """
 In this talk we look into different mechanisms for distributing rewards in participants of cryptocurrency systems. We distinguish the mechanisms in two broad categories, granular and epoch-based. We describe Bitcoin's mechanism, analyze the intuition behind its design choices, and cover well-known incentive-based attacks. Next, we compare it to the lesser known epoch-based paradigm, evaluating how the latter solves Bitcoin's shortcomings and describing the new hazard that it introduces.
 """
+
+[[extra.seminars]]
+author = "George Kadianakis"
+affiliation = "University of Athens, Tor Project"
+date = "2020-09-16"
+time = "10:00:00"
+timezone = "+01:00"
+title = "Proving Work Over Onions: PoW applications in Tor"
+abstract = """
+"""
+
 +++
