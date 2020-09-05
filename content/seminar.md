@@ -159,4 +159,14 @@ timezone = "+01:00"
 title = "(Title to be determined)"
 abstract = """
 """
+
+[[extra.seminars]]
+author = "Lefteris Kokoris-Kogias"
+affiliation = "EPFL"
+date = "2020-09-30"
+time = "11:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
 +++
