@@ -150,4 +150,13 @@ title = "Proving Work Over Onions: PoW applications in Tor"
 abstract = """
 """
 
+[[extra.seminars]]
+author = "Thomas Kerber"
+affiliation = "University of Edinburgh"
+date = "2020-09-23"
+time = "10:00:00"
+timezone = "+01:00"
+title = "(Title to be determined)"
+abstract = """
+"""
 +++
