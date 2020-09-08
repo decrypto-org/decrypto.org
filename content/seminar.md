@@ -134,9 +134,9 @@ affiliation = "University of Edinburgh"
 date = "2020-09-09"
 time = "12:00:00"
 timezone = "+03:00"
-title = "Reward Distribution Mechanisms in Cryptocurrencies"
+title = "Efficient State Management in Distributed Ledgers"
 abstract = """
-In this talk we look into different mechanisms for distributing rewards in participants of cryptocurrency systems. We distinguish the mechanisms in two broad categories, granular and epoch-based. We describe Bitcoin's mechanism, analyze the intuition behind its design choices, and cover well-known incentive-based attacks. Next, we compare it to the lesser known epoch-based paradigm, evaluating how the latter solves Bitcoin's shortcomings and describing the new hazard that it introduces.
+Distributed ledgers implement a storage layer, on top of which a shared state which is maintained by all participants in a decentralized manner. In UTxO-based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. However, decentralized systems lack centrally planned policies to enforce proper maintenance of the shared state, such as garbage collection, which would enhance performance and prevent Denial-of-Service (DoS) attacks. Instead, the system's design aims at incentivizing participants to act as intended. In this talk we investigate correct practices, such that the shared state in distributed ledgers is managed efficiently. We consider an abstract ledger model and investigate a set of transaction optimization techniques, including a coin selection algorithm which aims at minimizing the shared state. We also define state efficiency, which is the necessary property that a distributed ledger's fee scheme should possess in order to incentivize efficient state management, and propose an amended, efficient fee function for Bitcoin.
 """
 
 [[extra.seminars]]
