@@ -148,6 +148,8 @@ timezone = "+01:00"
 title = "Proving Work Over Onions: PoW applications in Tor"
 abstract = """
 """
+link="https://zoom.us/j/93526675587?pwd=RG5mOXFva2Q3a21UYWFhakU4VTBBUT09"
+password="sSzf0F"
 
 [[extra.seminars]]
 author = "Thomas Kerber"
