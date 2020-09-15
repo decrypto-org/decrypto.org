@@ -158,8 +158,14 @@ affiliation = "University of Edinburgh"
 date = "2020-09-23"
 time = "10:00:00"
 timezone = "+01:00"
-title = "(Title to be determined)"
+title = "Privacy & Smart Contracts"
 abstract = """
+Smart contracts have drastically lowered the barrier to entry for
+designing and deploying distributed systems. Largely they have done so
+at a great cost to privacy however, which smart contracts often ignore
+completely. In this talk we will see various approaches to
+re-introducing privacy in this setting, and what difficulties they
+encounter.
 """
 
 [[extra.seminars]]
