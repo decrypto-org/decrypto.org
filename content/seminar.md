@@ -138,9 +138,6 @@ title = "Efficient State Management in Distributed Ledgers"
 abstract = """
 Distributed ledgers implement a storage layer, on top of which a shared state which is maintained by all participants in a decentralized manner. In UTxO-based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. However, decentralized systems lack centrally planned policies to enforce proper maintenance of the shared state, such as garbage collection, which would enhance performance and prevent Denial-of-Service (DoS) attacks. Instead, the system's design aims at incentivizing participants to act as intended. In this talk we investigate correct practices, such that the shared state in distributed ledgers is managed efficiently. We consider an abstract ledger model and investigate a set of transaction optimization techniques, including a coin selection algorithm which aims at minimizing the shared state. We also define state efficiency, which is the necessary property that a distributed ledger's fee scheme should possess in order to incentivize efficient state management, and propose an amended, efficient fee function for Bitcoin.
 """
-link="https://zoom.us/j/91755124009?pwd=R3h2V0xjQ25QRldpSnArZjZvSTZDZz09"
-password="3K9hw7"
-
 
 [[extra.seminars]]
 author = "George Kadianakis"
@@ -151,6 +148,8 @@ timezone = "+01:00"
 title = "Proving Work Over Onions: PoW applications in Tor"
 abstract = """
 """
+link="https://zoom.us/j/93526675587?pwd=RG5mOXFva2Q3a21UYWFhakU4VTBBUT09"
+password="sSzf0F"
 
 [[extra.seminars]]
 author = "Thomas Kerber"
@@ -167,6 +166,8 @@ completely. In this talk we will see various approaches to
 re-introducing privacy in this setting, and what difficulties they
 encounter.
 """
+link="https://zoom.us/j/96126997760?pwd=VHovZWI2VHc5TVp3a2RwVzREVlI4dz09"
+password="XwWJ49"
 
 [[extra.seminars]]
 author = "Lefteris Kokoris-Kogias"
