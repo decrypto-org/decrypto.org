@@ -188,3 +188,14 @@ title = "ZeroJoin: Combining Zerocoin and CoinJoin"
 abstract = """
 We present ZeroJoin, a practical privacy-enhancing protocol for blockchain transactions. ZeroJoin can be considered a combination of Zerocoin and CoinJoin. Like Zerocoin, our protocol uses zero-knowledge proofs and a pool of participants. However, unlike Zerocoin, our proofs are very efficient, and our pool size is not monotonically increasing. Thus, our protocol overcomes the two major drawbacks of Zerocoin. Our approach can also be considered a non-interactive variant of CoinJoin, where the interaction is replaced by a public transaction on the blockchain. We also present ErgoMix, a practical implementation of ZeroJoin on top of Ergo, a smart contract platform based on Sigma protocols. While ZeroJoin contains the key ideas, it leaves open the practical issue of handling fees. The key contribution of ErgoMix is a novel approach to handle fee in ZeroJoin.
 """
+
+[[extra.seminars]]
+author = "Pyrros Chaidos"
+affiliation = "University of Athens"
+date = "2020-10-14"
+time = "12:00:00"
+timezone = "+03:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+
