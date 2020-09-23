@@ -20,10 +20,6 @@ build_search_index = false
 title = "team"
 path = "team/"
 
-# [[extra.ourpages]]
-# title = "partners"
-# path = "partners/"
-
 [[extra.ourpages]]
 title = "seminar"
 path = "seminar/"
