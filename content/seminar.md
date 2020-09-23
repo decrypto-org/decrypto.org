@@ -180,11 +180,10 @@ Speed, however, is the enemy of trust. Trust needs friction and time to be built
 
 In this talk, we are going to explore the evolution of trust and investigate the latest explosion of interest in digital and decentralized trust technologies.
 To this end, I am going to present both theoretical and practical advancements of my research in the last few years focusing on Byzantine Fault Tolerant systems and algorithms, answering questions such as: how can we get scalable decentralized systems able to support the current financial ecosystems, and how can we scavenge randomness from multiple semi-trustworthy players to run publicly-verifiable lotteries or to audit elections?
-
-Website: <a href='https://ist.ac.at/en/research/kokoris-group/'>https://ist.ac.at/en/research/kokoris-group/</a>
 """
 link="https://zoom.us/j/95123334345?pwd=cHlkSjYvT1lpbUhEd0xYRWlaMCtQUT09"
 password="766Hck"
+authorlink="https://ist.ac.at/en/research/kokoris-group/"
 
 [[extra.seminars]]
 author = "Amitabh Saxena"
