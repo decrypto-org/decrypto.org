@@ -164,8 +164,7 @@ completely. In this talk we will see various approaches to
 re-introducing privacy in this setting, and what difficulties they
 encounter.
 """
-link="https://zoom.us/j/96126997760?pwd=VHovZWI2VHc5TVp3a2RwVzREVlI4dz09"
-password="XwWJ49"
+video="https://vimeo.com/461002091"
 
 [[extra.seminars]]
 author = "Lefteris Kokoris-Kogias"
