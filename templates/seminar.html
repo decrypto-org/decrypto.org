@@ -62,7 +62,7 @@ cryptocurrencies.
 
 <h3>Past Seminars</h3>
 
-{% for seminar in page.extra.seminars %}
+{% for seminar in page.extra.seminars|reverse %}
     {% set iso_datetime = seminar.date ~ "T" ~ seminar.time ~ seminar.timezone %}
     {% set seminar_year  = iso_datetime | date(format="%Y") | int %}
     {% set seminar_month = iso_datetime | date(format="%m") | int %}
