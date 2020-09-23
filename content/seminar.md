@@ -148,8 +148,6 @@ timezone = "+01:00"
 title = "Proving Work Over Onions: PoW applications in Tor"
 abstract = """
 """
-link="https://zoom.us/j/93526675587?pwd=RG5mOXFva2Q3a21UYWFhakU4VTBBUT09"
-password="sSzf0F"
 
 [[extra.seminars]]
 author = "Thomas Kerber"
@@ -178,4 +176,44 @@ timezone = "+02:00"
 title = "(Title to be determined)"
 abstract = """
 """
+link="https://zoom.us/j/95123334345?pwd=cHlkSjYvT1lpbUhEd0xYRWlaMCtQUT09"
+password="766Hck"
+
+[[extra.seminars]]
+author = "Amitabh Saxena"
+affiliation = "Ergo Platform"
+date = "2020-10-07"
+time = "16:00:00"
+timezone = "+03:00"
+title = "ZeroJoin: Combining Zerocoin and CoinJoin"
+abstract = """
+We present ZeroJoin, a practical privacy-enhancing protocol for blockchain transactions. ZeroJoin can be considered a combination of Zerocoin and CoinJoin. Like Zerocoin, our protocol uses zero-knowledge proofs and a pool of participants. However, unlike Zerocoin, our proofs are very efficient, and our pool size is not monotonically increasing. Thus, our protocol overcomes the two major drawbacks of Zerocoin. Our approach can also be considered a non-interactive variant of CoinJoin, where the interaction is replaced by a public transaction on the blockchain. We also present ErgoMix, a practical implementation of ZeroJoin on top of Ergo, a smart contract platform based on Sigma protocols. While ZeroJoin contains the key ideas, it leaves open the practical issue of handling fees. The key contribution of ErgoMix is a novel approach to handle fee in ZeroJoin.
+"""
+link="https://zoom.us/j/94731032149?pwd=dFdVd2c4Q1QzT0lWQ1ZGTy90a1c0UT09"
+password="rd28r1"
+
+[[extra.seminars]]
+author = "Pyrros Chaidos"
+affiliation = "University of Athens"
+date = "2020-10-14"
+time = "12:00:00"
+timezone = "+03:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/93980500318?pwd=ZEtTZ1ZlUnVFWjJBUnNhdlhXeSt1QT09"
+password="hd3bHX"
+
+[[extra.seminars]]
+author = "Michele Ciampi"
+affiliation = "University of Edinburgh"
+date = "2020-10-21"
+time = "12:00:00"
+timezone = "+03:00"
+title = "Updatable Blockchains"
+abstract = """
+Software updates for blockchain systems become a real challenge when they impact the underlying consensus mechanism. The activation of such changes might jeopardize the integrity of the blockchain by resulting in chain splits. Moreover, the software update process should be handed over to the community and this means that the blockchain should support updates without relying on a trusted party. In this paper, we introduce the notion of updatable blockchains and show how to construct blockchains that satisfy this definition. Informally, an updatable blockchain is a secure blockchain and in addition it allows to update its protocol preserving the history of the chain. In this work, we focus only on the processes that allow securely switching from one blockchain protocol to another assuming that the blockchain protocols are correct. That is, we do not aim at providing a mechanism that allows reaching consensus on what is the code of the new blockchain protocol. We just assume that such a mechanism exists (like the one proposed in NDSS 2019 by Zhang et. al), and show how to securely go from the old protocol to the new one. The contribution of this paper can be summarized as follows. We provide the first formal definition of updatable ledgers and propose the description of two compilers. These compilers take a blockchain and turn it into an updatable blockchain. The first compiler requires the structure of the current and the updated blockchain to be very similar (only the structure of the blocks can be different) but it allows for an update process more simple, efficient. The second compiler that we propose is very generic (i.e., makes few assumptions on the similarities between the structure of the current blockchain and the update blockchain). The drawback of this compiler is that it requires the new blockchain to be resilient against a specific adversarial behaviour and requires all the honest parties to be online during the update process. However, we show how to get rid of the latest requirement (the honest parties being online during the update) in the case of proof-of-work and proof-of-stake ledgers.
+"""
+link="https://zoom.us/j/92776168444?pwd=ZFdVK0lLc2MvSFJrVm9XdktiYXBKQT09"
+password="jKA4NK"
 +++
