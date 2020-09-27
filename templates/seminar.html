@@ -37,9 +37,16 @@ cryptocurrencies.
         </p>
         <div class='card-body'>
             <h5>{{ seminar.title }}</h5>
-            <h6>{{ seminar.author }}, {{ seminar.affiliation }}</h6>
+            <h6>
+                {% if seminar.authorlink %}
+                    <a href='{{ seminar.authorlink }}'>{{ seminar.author }}</a>,
+                {% else %}
+                    {{ seminar.author }},
+                {% endif %}
+                {{ seminar.affiliation }}
+            </h6>
             <p class='card-text'>
-                {{ seminar.abstract }}
+                {{ seminar.abstract|safe }}
             </p>
             {% if seminar.link %}
                 <a class='btn btn-primary' href='{{ seminar.link }}'>Join seminar</a>
