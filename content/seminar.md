@@ -203,8 +203,24 @@ affiliation = "University of Athens"
 date = "2020-10-14"
 time = "12:00:00"
 timezone = "+03:00"
-title = "(Title to be determined)"
+title = "Aggregate weighted signatures for Blockchain Bootstrapping"
 abstract = """
+Proof of Stake Blockchains operate by having participants demonstrate that
+they control a certain piece of stake, chosen by some selection mechanism.
+In contrast, proof of work blockchains require that participants provide a
+solution to some computational problem with restrictions indicated by the context.
+Such solutions can usually be verified in isolation and at low computational cost.
+
+In many current Proof of Stake implementations, verifying a claim of stake either
+requires a large context or a somewhat complex proof. These costs are exacerbated
+when a new user wishes to participate for the first time, as verifying the current
+state will often require replaying operations since the genesis.
+
+We introduce the primitive of weighted aggregate signatures and use it to offer a
+simple solution to speed up bootstrapping: we produce an aggregate signature
+for verifying a succinct checkpoint for each epoch. Our approach minimizes computational
+costs to small stakeholders and is compatible with recent advances such as key-evolving
+signatures and delegation.
 """
 link="https://zoom.us/j/93980500318?pwd=ZEtTZ1ZlUnVFWjJBUnNhdlhXeSt1QT09"
 password="hd3bHX"
