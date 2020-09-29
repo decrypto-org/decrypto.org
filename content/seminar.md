@@ -181,7 +181,7 @@ password="rd28r1"
 
 [[extra.seminars]]
 author = "Lefteris Kokoris-Kogias"
-affiliation = "EPFL"
+affiliation = "IST Austria"
 date = "2020-10-07"
 time = "11:00:00"
 timezone = "+02:00"
