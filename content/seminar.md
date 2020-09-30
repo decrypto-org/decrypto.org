@@ -165,6 +165,7 @@ re-introducing privacy in this setting, and what difficulties they
 encounter.
 """
 video="https://vimeo.com/461002091"
+slides="https://drwx.org/2020/09/23/decrypto-slides.pdf"
 
 [[extra.seminars]]
 author = "Amitabh Saxena"
