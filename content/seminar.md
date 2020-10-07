@@ -238,4 +238,16 @@ Software updates for blockchain systems become a real challenge when they impact
 """
 link="https://zoom.us/j/92776168444?pwd=ZFdVK0lLc2MvSFJrVm9XdktiYXBKQT09"
 password="jKA4NK"
+
+[[extra.seminars]]
+author = "Giorgos Panagiotakos"
+affiliation = "University of Athens"
+date = "2020-11-11"
+time = "12:00:00"
+timezone = "+02:00"
+title = "Blockchains from Non-Idealized Hash Functions"
+abstract = """
+"""
+link="https://zoom.us/j/93093619505?pwd=akZYSFRxYnRLNDF5N3JwaVhRTEx0dz09"
+password="QK7cJ7"
 +++
