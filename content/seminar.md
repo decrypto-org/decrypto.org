@@ -177,8 +177,7 @@ title = "ZeroJoin: Combining Zerocoin and CoinJoin"
 abstract = """
 We present ZeroJoin, a practical privacy-enhancing protocol for blockchain transactions. ZeroJoin can be considered a combination of Zerocoin and CoinJoin. Like Zerocoin, our protocol uses zero-knowledge proofs and a pool of participants. However, unlike Zerocoin, our proofs are very efficient, and our pool size is not monotonically increasing. Thus, our protocol overcomes the two major drawbacks of Zerocoin. Our approach can also be considered a non-interactive variant of CoinJoin, where the interaction is replaced by a public transaction on the blockchain. We also present ErgoMix, a practical implementation of ZeroJoin on top of Ergo, a smart contract platform based on Sigma protocols. While ZeroJoin contains the key ideas, it leaves open the practical issue of handling fees. The key contribution of ErgoMix is a novel approach to handle fee in ZeroJoin.
 """
-link="https://zoom.us/j/94731032149?pwd=dFdVd2c4Q1QzT0lWQ1ZGTy90a1c0UT09"
-password="rd28r1"
+video = "https://www.youtube.com/playlist?list=PL8-KVrs6vXLSKEm64jBuzxYllZxGsacQw"
 
 [[extra.seminars]]
 author = "Lefteris Kokoris-Kogias"
