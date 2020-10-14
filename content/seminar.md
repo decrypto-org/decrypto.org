@@ -246,6 +246,20 @@ time = "12:00:00"
 timezone = "+02:00"
 title = "Blockchains from Non-Idealized Hash Functions"
 abstract = """
+The formalization of concrete, non-idealized hash function properties sufficient
+to prove the security of Bitcoin and related protocols has been elusive, as all
+previous security analyses of blockchain protocols have been performed in the
+random oracle model. In this paper we identify three such properties, and then
+construct a blockchain protocol whose security can be reduced to them in the
+standard model assuming a common reference string (CRS).The three properties
+are: collision resistance, computational randomness extraction and iterated
+hardness. While the first two properties have been extensively studied, iterated
+hardness has been empirically stress-tested since the rise of Bitcoin; in fact,
+as we demonstrate in this paper, any attack against it (assuming the other two
+properties hold) results in an attack against Bitcoin.In addition, iterated
+hardness puts forth a new class of search problems which we term iterated search
+problems (ISP). ISPs enable the concise and modular specification of blockchain
+protocols, and may be of independent interest.
 """
 link="https://zoom.us/j/93093619505?pwd=akZYSFRxYnRLNDF5N3JwaVhRTEx0dz09"
 password="QK7cJ7"
