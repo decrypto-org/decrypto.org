@@ -239,6 +239,18 @@ link="https://zoom.us/j/92776168444?pwd=ZFdVK0lLc2MvSFJrVm9XdktiYXBKQT09"
 password="jKA4NK"
 
 [[extra.seminars]]
+author = "Dragos Ilie"
+affiliation = "Imperial College London"
+date = "2020-11-04"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/96663052120?pwd=UkJnTVF1ME5nQlRRUnd4WWd2Z1JLUT09"
+password="D93vFQ"
+
+[[extra.seminars]]
 author = "Giorgos Panagiotakos"
 affiliation = "University of Athens"
 date = "2020-11-11"
@@ -263,4 +275,56 @@ protocols, and may be of independent interest.
 """
 link="https://zoom.us/j/93093619505?pwd=akZYSFRxYnRLNDF5N3JwaVhRTEx0dz09"
 password="QK7cJ7"
+
+[[extra.seminars]]
+author = "Alexei Zamyatin"
+affiliation = "Imperial College London and Interlay"
+date = "2020-11-18"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(To be determined)"
+abstract = """
+"""
+authorlink="https://www.alexeizamyatin.me/"
+link="https://zoom.us/j/91223508615?pwd=c3NXS1FRRHZadXhmQ0tYT0RZY0g4Zz09"
+password="0bSLsx"
+
+[[extra.seminars]]
+author = "Runchao Han"
+affiliation = "Monash University"
+date = "2020-11-25"
+time = "12:00:00"
+timezone = "+02:00"
+title = "RandChain: Decentralised Randomness Beacon from Sequential Proof-of-Work"
+abstract = """
+Decentralised Randomness Beacon (DRB) is a service that generates publicly verifiable randomness. Constructing DRB protocols is challenging. Existing DRB protocols suffer from strong network synchrony assumptions, high communication complexity and/or various attacks. In this paper, we propose RandChain, a new family of DRB protocols. RandChain is constructed from Sequential Proof-of-Work (SeqPoW), a Proof-of-Work (PoW) variant that is sequential, i.e., the work can only be done by a single processor. In RandChain, nodes jointly maintain a blockchain, and each block derives a random output. To append a block to the blockchain, each node should keep mining, i.e., solve a SeqPoW puzzle derived from the last block and its identity. Given the SeqPoW and its fixed input, mining is non-parallelisable. RandChain applies Nakamoto consensus so that nodes agree on a unique blockchain.
+
+While inheriting simplicity and scalability from Nakamoto consensus, RandChain produces strongly unpredictable randomness and remains energy-efficient and decentralised. RandChain does not require nodes to provide local entropy, thus giving no opportunity to bias randomness. Solutions of SeqPoW puzzles are unpredictable, so nodes cannot predict randomness. As each node can use at most a single processor for mining, RandChain remains energy-efficient. The mining speed is bound by processors’ clock rate, which is hard to improve further. Thus, powerful nodes can gain limited advantage over mining, and RandChain achieves a high degree of decentralisation.
+"""
+link="https://zoom.us/j/95640461003?pwd=bk1zQUtjU1ZmWEQ2aElndjB6NlMxUT09"
+password="hCm0d2"
+
+[[extra.seminars]]
+author = "Mustafa Al-Bassam"
+affiliation = "University College London"
+date = "2020-12-02"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/93067216002?pwd=WDZnZlA5cStSVVNCdkoycXBLZnhzdz09"
+password="SEFG6q"
+
+[[extra.seminars]]
+author = "Erkan Tairi"
+affiliation = "TU Wien"
+date = "2020-12-09"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/92874956032?pwd=ZFlUdWtYWUZNMzFkcnlaNjE5empBQT09"
+password="17fMte"
 +++
