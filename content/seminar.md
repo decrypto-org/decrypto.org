@@ -40,6 +40,7 @@ During the last years, significant effort has been put into enabling blockchain 
 Github: https://github.com/sdaveas/nipopow-verifier
 """
 slides = "https://slides.com/steliosntaveas/nipopow-verifier/"
+video = "https://www.youtube.com/watch?v=y0eahPHAgRc"
 
 [[extra.seminars]]
 author = "Zeta Avarikioti"
