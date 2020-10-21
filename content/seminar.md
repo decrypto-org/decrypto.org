@@ -327,4 +327,16 @@ abstract = """
 """
 link="https://zoom.us/j/92874956032?pwd=ZFlUdWtYWUZNMzFkcnlaNjE5empBQT09"
 password="17fMte"
+
+[[extra.seminars]]
+author = "Katerina Samari"
+affiliation = "University of Athens"
+date = "2020-12-16"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/93817697327?pwd=blBoNEp3ODZSWHY4YXl6cEU2dENPUT09"
+password="1dUQuy"
 +++
