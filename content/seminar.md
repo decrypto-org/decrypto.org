@@ -240,6 +240,23 @@ link="https://zoom.us/j/92776168444?pwd=ZFdVK0lLc2MvSFJrVm9XdktiYXBKQT09"
 password="jKA4NK"
 
 [[extra.seminars]]
+author = "Dragos Ilie"
+affiliation = "Imperial College London"
+date = "2020-11-04"
+time = "12:00:00"
+timezone = "+02:00"
+title = "Committing to Quantum Resistance: Defences for Bitcoin Quantum Adversaries"
+abstract = """
+Quantum computers are expected to have a dramatic impact on numerous fields, due to their anticipated ability to solve classes of mathematical problems much more efficiently than their classical counterparts. This particularly applies to domains involving integer factorisation and discrete logarithms, such as public key cryptography.
+
+In this talk, we consider the threats a quantum-capable adversary could pose to Bitcoin, which currently uses the Elliptic Curve Digital Signature Algorithm (ECDSA) to sign transactions.
+
+We then propose a simple commit--delay--reveal protocol and a variant of it where the security parameter is configurable. These schemes allow users to securely move their funds from old (non-quantum-resistant) outputs to those adhering to a quantum-resistant digital signature scheme.
+"""
+link="https://zoom.us/j/96663052120?pwd=UkJnTVF1ME5nQlRRUnd4WWd2Z1JLUT09"
+password="D93vFQ"
+
+[[extra.seminars]]
 author = "Giorgos Panagiotakos"
 affiliation = "University of Athens"
 date = "2020-11-11"
@@ -264,4 +281,83 @@ protocols, and may be of independent interest.
 """
 link="https://zoom.us/j/93093619505?pwd=akZYSFRxYnRLNDF5N3JwaVhRTEx0dz09"
 password="QK7cJ7"
+
+[[extra.seminars]]
+author = "Alexei Zamyatin"
+affiliation = "Imperial College London and Interlay"
+date = "2020-11-18"
+time = "12:00:00"
+timezone = "+02:00"
+title = "Trustless Cross-Chain Communication: Impossible but Incentive Compatible"
+abstract = """
+Since the advent of Bitcoin, a plethora of distributed ledgers has been created, differing in design and purpose. Considering it is unlikely that there will be "one coin to rule them all", interoperability has shifted into the focus of industry and academia. Today, cross-chain communication (CCC) plays a fundamental role not only in cryptocurrency exchanges, but also in scalability efforts via sharding, extension of existing systems through sidechains, and bootstrapping of new blockchains.
+
+In this talk, we formulate the problem of cross-chain communication (CCC) and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then present XCLAIM, a framework for migrating assets across blockchains which works around this result by leveraging incentives. XCLAIM employs a dynamic and permissionless set of collateralized intermediaries, combined with cross-chain state verification and punishment. This construction ensures that users do not face financial damage from theft or collusion of intermediaries, while maintaining transparency and usability.
+"""
+authorlink="https://www.alexeizamyatin.me/"
+link="https://zoom.us/j/91223508615?pwd=c3NXS1FRRHZadXhmQ0tYT0RZY0g4Zz09"
+password="0bSLsx"
+
+[[extra.seminars]]
+author = "Runchao Han"
+affiliation = "Monash University"
+date = "2020-11-25"
+time = "12:00:00"
+timezone = "+02:00"
+title = "RandChain: Decentralised Randomness Beacon from Sequential Proof-of-Work"
+abstract = """
+Decentralised Randomness Beacon (DRB) is a service that generates publicly verifiable randomness. Constructing DRB protocols is challenging. Existing DRB protocols suffer from strong network synchrony assumptions, high communication complexity and/or various attacks. In this paper, we propose RandChain, a new family of DRB protocols. RandChain is constructed from Sequential Proof-of-Work (SeqPoW), a Proof-of-Work (PoW) variant that is sequential, i.e., the work can only be done by a single processor. In RandChain, nodes jointly maintain a blockchain, and each block derives a random output. To append a block to the blockchain, each node should keep mining, i.e., solve a SeqPoW puzzle derived from the last block and its identity. Given the SeqPoW and its fixed input, mining is non-parallelisable. RandChain applies Nakamoto consensus so that nodes agree on a unique blockchain.
+
+While inheriting simplicity and scalability from Nakamoto consensus, RandChain produces strongly unpredictable randomness and remains energy-efficient and decentralised. RandChain does not require nodes to provide local entropy, thus giving no opportunity to bias randomness. Solutions of SeqPoW puzzles are unpredictable, so nodes cannot predict randomness. As each node can use at most a single processor for mining, RandChain remains energy-efficient. The mining speed is bounded by processors’ clock rate, which is hard to improve further. Thus, powerful nodes can gain limited advantage over mining, and RandChain achieves a high degree of decentralisation.
+"""
+link="https://zoom.us/j/95640461003?pwd=bk1zQUtjU1ZmWEQ2aElndjB6NlMxUT09"
+password="hCm0d2"
+
+[[extra.seminars]]
+author = "Mustafa Al-Bassam"
+affiliation = "University College London"
+date = "2020-12-02"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/93067216002?pwd=WDZnZlA5cStSVVNCdkoycXBLZnhzdz09"
+password="SEFG6q"
+
+[[extra.seminars]]
+author = "Erkan Tairi"
+affiliation = "TU Wien"
+date = "2020-12-09"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/92874956032?pwd=ZFlUdWtYWUZNMzFkcnlaNjE5empBQT09"
+password="17fMte"
+
+[[extra.seminars]]
+author = "Katerina Samari"
+affiliation = "University of Athens"
+date = "2020-12-16"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/93817697327?pwd=blBoNEp3ODZSWHY4YXl6cEU2dENPUT09"
+password="1dUQuy"
+
+[[extra.seminars]]
+author = "Sandro Coretti-Drayton"
+affiliation = "IOHK"
+date = "2021-01-13"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/94233926850?pwd=UVlEeW11enNCczJJZVFEbjk0aHQrUT09"
+passowrd="drfpv2"
 +++
