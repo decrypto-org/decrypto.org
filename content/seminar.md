@@ -347,4 +347,16 @@ abstract = """
 """
 link="https://zoom.us/j/93817697327?pwd=blBoNEp3ODZSWHY4YXl6cEU2dENPUT09"
 password="1dUQuy"
+
+[[extra.seminars]]
+author = "Sandro Coretti-Drayton"
+affiliation = "IOHK"
+date = "2021-01-13"
+time = "12:00:00"
+timezone = "+02:00"
+title = "(Title to be determined)"
+abstract = """
+"""
+link="https://zoom.us/j/94233926850?pwd=UVlEeW11enNCczJJZVFEbjk0aHQrUT09"
+passowrd="drfpv2"
 +++
