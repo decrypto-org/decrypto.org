@@ -289,7 +289,7 @@ time = "12:00:00"
 timezone = "+02:00"
 title = "Trustless Cross-Chain Communication: Impossible but Incentive Compatible"
 abstract = """
-Since the advent of Bitcoin, a plethora of distributed ledgers has been created, differing in design and purpose. Considering it is unlikely that "one coin to rule them all", interoperability has shifted into the focus of industry and academia. Today, cross-chain communication (CCC) plays a fundamental role not only in cryptocurrency exchanges, but also in scalability efforts via sharding, extension of existing systems through sidechains, and bootstrapping of new blockchains.
+Since the advent of Bitcoin, a plethora of distributed ledgers has been created, differing in design and purpose. Considering it is unlikely that there will be "one coin to rule them all", interoperability has shifted into the focus of industry and academia. Today, cross-chain communication (CCC) plays a fundamental role not only in cryptocurrency exchanges, but also in scalability efforts via sharding, extension of existing systems through sidechains, and bootstrapping of new blockchains.
 
 In this talk, we formulate the problem of cross-chain communication (CCC) and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then present XCLAIM, a framework for migrating assets across blockchains which works around this result by leveraging incentives. XCLAIM employs a dynamic and permissionless set of collateralized intermediaries, combined with cross-chain state verification and punishment. This construction ensures that uses do not face financial damage from theft or collusion of intermediaries, while maintaining transparency and usability.
 """
