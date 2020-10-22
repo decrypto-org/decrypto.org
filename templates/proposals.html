@@ -1,0 +1,81 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<p>
+We at decrypto enjoy collaborating with aspiring researchers that have the
+skills and the drive to engage with challenging and fulfilling projects. If you
+are looking for a project for your Bachelor or Master thesis, you've come to
+the right spot!
+</p>
+
+{% set no_available = page.extra.proposals
+    | filter(attribute="available", value=true) | length %}
+{% if no_available > 0%}
+    <h3>Available Projects</h3>
+{% endif %}
+
+{% for proposal in page.extra.proposals %}
+    {% if proposal.available %}
+        <div class='card mb-3'>
+            <p class='card-header'>
+                {{ proposal.title }}
+            </p>
+            <div class='card-body'>
+                <h6>
+                    Supervisor: {{ proposal.responsible }}
+                </h6>
+                <p class='card-text'>
+                    {{ proposal.abstract | safe }}
+                </p>
+                <hr>
+                <h6>
+                   Level: {{ proposal.level }}
+                </h6>
+                <h6>
+                    <div style='padding-top: 1em; color: #555; font-size: 90%'>
+                        Contact: <a href="mailto:{{ proposal.contact }}">
+                            {{ proposal.contact }}
+                        </a>
+                    </div>
+                </h6>
+                {% if proposal.funding %}
+                    <h6>
+                        Funding available!
+                    </h6>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+
+{% set no_assigned = page.extra.proposals
+    | filter(attribute="available", value=false) | length %}
+{% if no_assigned > 0 %}
+  <h3>Assigned projects</h3>
+{% endif %}
+
+{% for proposal in page.extra.proposals %}
+    {% if not proposal.available %}
+        <div class='card mb-3'>
+            <p class='card-header'>
+                {{ proposal.title }}
+            </p>
+            <div class='card-body'>
+                <h6>
+                    Supervisor: {{ proposal.responsible }}
+                </h6>
+                {% if proposal.assignee %}
+                    <h6>
+                        Assignee: {{ proposal.assignee }}
+                    </h6>
+                {% endif %}
+                <p class='card-text'>
+                    {{ proposal.abstract | safe }}
+                </p>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+
+{% endblock content %}
