@@ -248,7 +248,7 @@ title = "Committing to Quantum Resistance: Defences for Bitcoin Quantum Adversar
 abstract = """
 Quantum computers are expected to have a dramatic impact on numerous fields, due to their anticipated ability to solve classes of mathematical problems much more efficiently than their classical counterparts. This particularly applies to domains involving integer factorisation and discrete logarithms, such as public key cryptography.
 
-In this talk, we consider the threats a quantum-capable adversary could impose on Bitcoin, which currently uses the Elliptic Curve Digital Signature Algorithm (ECDSA) to sign transactions.
+In this talk, we consider the threats a quantum-capable adversary could pose to Bitcoin, which currently uses the Elliptic Curve Digital Signature Algorithm (ECDSA) to sign transactions.
 
 We then propose a simple commit--delay--reveal protocol and a variant of it where the security parameter is configurable. These schemes allow users to securely move their funds from old (non-quantum-resistant) outputs to those adhering to a quantum-resistant digital signature scheme.
 """
