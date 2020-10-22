@@ -244,8 +244,13 @@ affiliation = "Imperial College London"
 date = "2020-11-04"
 time = "12:00:00"
 timezone = "+02:00"
-title = "(Title to be determined)"
+title = "Committing to Quantum Resistance: Defences for Bitcoin Quantum Adversaries"
 abstract = """
+Quantum computers are expected to have a dramatic impact on numerous fields, due to their anticipated ability to solve classes of mathematical problems much more efficiently than their classical counterparts. This particularly applies to domains involving integer factorisation and discrete logarithms, such as public key cryptography.
+
+In this talk, we consider the threats a quantum-capable adversary could impose on Bitcoin, which currently uses the Elliptic Curve Digital Signature Algorithm (ECDSA) to sign transactions.
+
+We then propose a simple commit--delay--reveal protocol and a variant of it where the security parameter is configurable. These schemes allow users to securely move their funds from old (non-quantum-resistant) outputs to those adhering to a quantum-resistant digital signature scheme.
 """
 link="https://zoom.us/j/96663052120?pwd=UkJnTVF1ME5nQlRRUnd4WWd2Z1JLUT09"
 password="D93vFQ"
