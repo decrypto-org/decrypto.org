@@ -9,6 +9,7 @@ Implement a Proof of Concept of the Recursive Channels paper.
 """
 contact = "o.thyfronitis@ed.ac.uk"
 available = true
+level = "Master"
 
 [[extra.proposals]]
 responsible = "Orfeas Stefanos Thyfronitis Litos"
@@ -24,4 +25,5 @@ Cryptographic Verification of Java-like Programs</a>.
 contact = "o.thyfronitis@ed.ac.uk"
 funding = false
 available = true
+level = "Master"
 +++
