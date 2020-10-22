@@ -9,7 +9,11 @@ are looking for a project for your Bachelor or Master thesis, you've come to
 the right spot!
 </p>
 
-<h3>Available Projects</h3>
+{% set no_available = page.extra.proposals
+    | filter(attribute="available", value=true) | length %}
+{% if no_available > 0%}
+    <h3>Available Projects</h3>
+{% endif %}
 
 {% for proposal in page.extra.proposals %}
     {% if proposal.available %}
@@ -45,7 +49,11 @@ the right spot!
     {% endif %}
 {% endfor %}
 
-<h3>Assigned projects</h3>
+{% set no_assigned = page.extra.proposals
+    | filter(attribute="available", value=false) | length %}
+{% if no_assigned > 0 %}
+  <h3>Assigned projects</h3>
+{% endif %}
 
 {% for proposal in page.extra.proposals %}
     {% if not proposal.available %}
