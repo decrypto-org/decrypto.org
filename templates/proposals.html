@@ -3,16 +3,31 @@
 {% block content %}
 
 <p>
-We at decrypto enjoy collaborating with aspiring researchers that have the
-skills and the drive to engage with challenging and fulfilling projects. If you
-are looking for a project for your Bachelor or Master thesis, you've come to
-the right spot!
+    Decrypto is inviting senior undergraduate and graduate students to
+    conduct their Bachelor or Master theses with us. Our thesis internships
+    are full-time semester-long research positions in which you will work closely with
+    a PhD, post-doc, or professor supervisor to conduct a challenging and impactful
+    research-level project. The goal of the internship is to complete your thesis,
+    while at the same time delivering research results in the form of a published
+    paper in a ranked peer-reviewed conference or in the form of production software.
+</p>
+
+<p>
+    If you are an aspiring researcher, Decrypto is a great place to learn to
+    perform research and publish your first paper which will help you towards
+    a research-oriented career. We stand between theory and practice, so you
+    will also deliver rigorous theoretical results or write production-grade software.
+    We are at the forefront of research related to
+    blockchains, anonymity and the political applications of cryptography,
+    and our team comprises of scholars with strong theoretical foundations,
+    as well as partners in the industry and open source communities who
+    will make sure your results are impactful and used in practice.
 </p>
 
 {% set no_available = page.extra.proposals
     | filter(attribute="available", value=true) | length %}
 {% if no_available > 0%}
-    <h3>Available Projects</h3>
+    <h3>Available Theses</h3>
 {% endif %}
 
 {% for proposal in page.extra.proposals %}
@@ -77,5 +92,23 @@ the right spot!
         </div>
     {% endif %}
 {% endfor %}
+
+<p>
+    Working as a researcher at Decrypto, you will conduct research in an
+    independent manner but also working closely with your Decrypto supervisor.
+    We accept students from universities worldwide. We will guide you
+    in your day-to-day research working together with a professor from your university
+    who will be your <strong>thesis host</strong> and function as your official
+    supervisor.
+</p>
+
+<p>
+    To apply for a thesis internship, please send an email to the contact person
+    of your topic of interest. Please include your CV
+    and transcript, as well as a contact to your thesis host professor from your
+    university. If you have a concrete proposal that is not listed,
+    contact us to discuss your proposal by reaching out to the contact person
+    with a related topic of interest.
+</p>
 
 {% endblock content %}
