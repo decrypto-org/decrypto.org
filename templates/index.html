@@ -59,201 +59,32 @@
 
             <h3>Papers</h3>
             <ul>
-                <li>
-                    <a href='https://eprint.iacr.org/2017/963.pdf'>Non-Interactive Proofs of Proof-of-Work</a><br />
-                    Aggelos Kiayias,
-                    Andrew Miller,
-                    Dionysis Zindros
-                    at <strong>Financial Cryptography</strong> 2020
-                </li>
-                <li>
-                    <a href='https://eprint.iacr.org/2019/1096.pdf'>Proof of Burn</a><br />
-                    Kostis Karantias,
-                    Aggelos Kiayias,
-                    Dionysis Zindros
-                    at <strong>Financial Cryptography</strong> 2020
-                </li>
-                <li>
-                    <a href="https://tik-db.ee.ethz.ch/file/4afd9ccaf69bcbdc7e0fd79cdb1e9c0d/Cerberus_Channels_arXiv.pdf">Cerberus Channels: Incentivizing Watchtowers for Bitcoin</a><br />
-                    Georgia Avarikioti,
-                    Orfeas Stefanos Thyfronitis Litos,
-                    Roger Wattenhofer
-                    at <strong>Financial Cryptography</strong> 2020
-                </li>
-                <li>
-                    <a href="https://raw.githubusercontent.com/OrfeasLitos/PaymentChannels/master/paymentChannels.pdf">A Composable Security Treatment of the Lightning Network</a><br />
-                    Aggelos Kiayias,
-                    Orfeas Stefanos Thyfronitis Litos
-                    at <strong>Computer Security Foundations</strong> 2020
-                </li>
-                <li>
-                    <a href='https://eprint.iacr.org/2020/525.pdf'>Account Management in Proof of Stake Ledgers</a><br />
-                    Dimitris Karakostas,
-                    Aggelos Kiayias,
-                    Mario Larangeira
-                    at <strong>Security and Cryptography for Networks</strong> 2020
-                </li>
-                <li>
-                    <a href='https://eprint.iacr.org/2020/927.pdf'>Implementing a Gas-efficient Superlight Bitcoin Client in Solidity</a><br />
-                    Stelios Daveas,
-                    Kostis Karantias,
-                    Aggelos Kiayias,
-                    Dionysis Zindros
-                    at <strong>Advances in Financial Technologies</strong> 2020
-                </li>
-                <li>
-                    <a href="https://eprint.iacr.org/2020/138.pdf">Smart Contract Derivatives</a><br />
-                    Kostis Karantias,
-                    Aggelos Kiayias,
-                    Dionysis Zindros
-                    at <strong>MARBLE</strong> 2020
-                </li>
-                <li>
-                    <a href="https://eprint.iacr.org/2019/1444.pdf">Compact Storage of Superblocks for NIPoPoW Applications</a><br />
-                    Kostis Karantias,
-                    Aggelos Kiayias,
-                    Nikos Leonardos,
-                    Dionysis Zindros
-                    at <strong>MARBLE</strong> 2019
-                </li>
-                <li>
-                    <a href="https://eprint.iacr.org/2018/1239.pdf">Proof-of-Stake Sidechains</a><br />
-                    Peter Gaži,
-                    Aggelos Kiayias,
-                    Dionysis Zindros
-                    at <strong>IEEE Security &amp; Privacy</strong> 2019
-                </li>
-                <li>
-                    <a href="https://arxiv.org/pdf/1907.02434.pdf">Cryptocurrency Egalitarianism:A Quantitative Approach</a><br />
-                    Dimitris Karakostas,
-                    Aggelos Kiayias,
-                    Christos Nasikas,
-                    Dionysis Zindros
-                    at <strong>TOKENOMICS</strong> 2019
-                </li>
-                <li>
-                    <a href="https://raw.githubusercontent.com/OrfeasLitos/fairPostOrdering/master/contentCuration.pdf">A Puff of Steem: Security Analysis of Decentralized Content Curation</a><br />
-                    Aggelos Kiayias,
-                    Benjamin Livshits,
-                    Andrés Monteoliva Mosteiro,
-                    Orfeas Stefanos Thyfronitis Litos
-                    at <strong>TOKENOMICS</strong> 2019
-                </li>
-                <li>
-                    <a href='https://eprint.iacr.org/2019/034.pdf'>A Formal Treatment of Hardware Wallets</a><br />
-                    Myrto Arapinis,
-                    Andriana Gkaniatsou,
-                    Dimitris Karakostas,
-                    Aggelos Kiayias
-                    at <strong>Financial Cryptography</strong>
-                    2019
-                </li>
-                <li>
-                    <a href='https://eprint.iacr.org/2018/1048.pdf'>Proof-of-Work Sidechains</a><br />
-                    Aggelos Kiayias, Dionysis Zindros
-                    at <strong>Financial Cryptography Workshop on Trusted Smart Contracts</strong>
-                    2019
-                </li>
-                <li>
-                    <a href="https://spiral.imperial.ac.uk/bitstream/10044/1/75810/5/2019-1128.pdf">SoK: Communication Across Distributed Ledgers</a><br />
-                    Alexei Zamyatin,
-                    Mustafa Al-Bassam,
-                    Dionysis Zindros,
-                    Eleftherios Kokoris-Kogias,
-                    Pedro Moreno-Sanchez,
-                    Aggelos Kiayias,
-                    William J Knottenbelt,
-                    2019
-                </li>
-                <li>
-                    <a href='https://arxiv.org/pdf/1811.01348.pdf'>Structure and Content of the Visible Darknet</a><br />
-                    Georgia Avarikioti, Roman Brunner, Aggelos Kiayias, Roger Wattenhofer, Dionysis Zindros,
-                    2018
-                </li>
-                <li>
-                    <a href='https://eprint.iacr.org/2017/156.pdf'>Trust Is Risk: A Decentralized Financial Trust Platform</a><br />
-                    Orfeas Stefanos Thyfronitis Litos,
-                    Dionysis Zindros
-                    at <strong>Financial Cryptography</strong> 2017
-                </li>
+                {% for paper in section.extra.papers %}
+                    <li>
+                        {% if paper.venue %}
+                            {% set suffix="" %}
+                        {% else %}
+                            {% set suffix="," %}
+                        {% endif %}
+                        <a href='{{ paper.link }}'>{{ paper.title }}</a><br />
+                        {{ paper.authors }}{{ suffix }}
+                        {% if paper.venue %}
+                            at <strong>{{ paper.venue }}</strong>
+                        {% endif %}
+                        {{ paper.year }}
+                    </li>
+                {% endfor %}
             </ul>
 
             <h3>Theses</h3>
             <ul>
-                <li>
-                    <a href='https://github.com/andripol/thesis/blob/master/thesis.pdf'>A Study on Superlight Blockchain Clients under Velvet Fork</a><br />
-                    Andrianna Polydouri,
-                    Master Thesis 2020, <strong>University of Athens</strong>
-                </li>
-                <li>
-                    <a href='https://github.com/sdaveas/nipopow-verifier/blob/master/thesis/thesis.pdf'>Implementing a Gas-efficient Superlight Bitcoin Client in Solidity</a><br />
-                    Stelios Daveas,
-                    Master Thesis 2020, <strong>University of Athens</strong>
-                </li>
-                <li>
-                    <a href='https://dionyziz.com/thesis.pdf'>Decentralized Blockchain Interoperability</a><br />
-                    Dionysis Zindros,
-                    PhD Thesis 2020, <strong>University of Athens</strong>
-                </li>
-                <li>
-                    <a href='https://gtklocker.com/thesis.pdf'>Enabling NIPoPoW Applications on Bitcoin Cash</a><br />
-                    Kostis Karantias,
-                    Master Thesis 2019, <strong>University of Ioannina</strong>
-                </li>
-                <li>
-                    <a href="http://alma.di.uoa.gr/sites/default/files/2020-01/thesis.pdf">Monero mining: CryptoNight Analysis</a><br />
-                    Orestis Konstantinidis,
-                    Master Thesis 2019,
-                    <strong>University of Athens</strong>
-                </li>
-                <li>
-                    <a href="https://github.com/dionyziz/popow/tree/crosschain-nipopow/experiment">Enabling crosschain transactions using NIPoPoWs</a><br/>
-                    Giorgos Christoglou,
-                    Master Thesis 2018,
-                    <strong>Imperial College London</strong>
-                </li>
-                <li>
-                    <a href="https://github.com/decrypto-org/spider">Structure and Content of the Visible Darknet</a><br/>
-                    Roman Brunner,
-                    Bachelor Thesis 2018,
-                    <strong>ETH Zürich</strong>
-                </li>
-                <li>
-                    <a href="https://github.com/OrfeasLitos/TrustIsRisk.js/tree/spv-extension">A bcoin.js Implementation of Trust-is-Risk</a><br/>
-                    Christos Porios,
-                    Bachelor Thesis 2017,
-                    <strong>Imperial College London</strong>
-                </li>
-                <li>
-                    <a href='https://github.com/OrfeasLitos/TrustIsRisk/blob/master/thesis/wholethesis.pdf'>Trust Is Risk: A Decentralized Financial Trust Platform</a><br />
-                    Orfeas Stefanos Thyfronitis Litos,
-                    Master Thesis 2017, <strong>National Technical University of Athens</strong>
-                </li>
-                <li>
-                    <a href="https://github.com/esarafianou/rupture-thesis/raw/master/thesis.pdf">Creation of a Tool for Attacks Against Compression, Encrypted Protocols</a><br />
-                    Eva Sarafianou,
-                    Master Thesis 2017,
-                    <strong>National Technical University of Athens</strong>
-                </li>
-                <li>
-                    <a href="https://pergamos.lib.uoa.gr/uoa/dl/frontend/file/lib/default/data/1759139/theFile/1759140">Extending the Rupture compression attack framework against real world systems</a><br />
-                    Dimitris Grigoriou,
-                    Bachelor Thesis 2017,
-                    <strong>University of Athens</strong>
-                </li>
-                <li>
-                    <a href="https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/44116/main.pdf?sequence=1">Implementation of a Multi-party Off-the-Record messaging protocol</a><br />
-                    Kostis Andrikopoulos,
-                    Dimitris Kolotouros,
-                    Master Thesis 2016,
-                    <strong>National Technical University of Athens</strong>
-                </li>
-                <li>
-                    <a href="https://dimkarakostas.com/probabilistic_attacks.pdf">Probabilistic attacks against compressed, encrypted protocols</a><br />
-                    Dimitris Karakostas,
-                    Master Thesis 2016,
-                    <strong>National Technical University of Athens</strong>
-                </li>
+                {% for thesis in section.extra.theses %}
+                    <li>
+                        <a href='{{ thesis.link }}'>{{ thesis.title }}</a><br />
+                        {{ thesis.author }}, {{ thesis.level }} Thesis {{ thesis.year }},
+                        <strong>{{ thesis.institution }}</strong>
+                    </li>
+                {% endfor %}
             </ul>
             {% endblock content %}
         </main>
