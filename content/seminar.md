@@ -360,4 +360,14 @@ abstract = """
 """
 link="https://zoom.us/j/94233926850?pwd=UVlEeW11enNCczJJZVFEbjk0aHQrUT09"
 passowrd="drfpv2"
+
+[[extra.seminars]]
+author = "Maxim Jourenko"
+affiliation = "Tokyo Institute of Technology"
+date = "2021-01-20"
+time = "18:00:00"
+timezone = "+09:00"
+title = "(TBD)"
+abstract = """
+"""
 +++
