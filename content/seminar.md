@@ -360,7 +360,7 @@ title = "(Title to be determined)"
 abstract = """
 """
 link="https://zoom.us/j/94233926850?pwd=UVlEeW11enNCczJJZVFEbjk0aHQrUT09"
-passowrd="drfpv2"
+password="drfpv2"
 
 [[extra.seminars]]
 author = "Maxim Jourenko"
