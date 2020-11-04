@@ -371,4 +371,6 @@ timezone = "+09:00"
 title = "(TBD)"
 abstract = """
 """
+link="https://zoom.us/j/97866745516?pwd=SHU5bUhyb3BITk9ibWplTTBya2I2dz09"
+password="8JU5mM"
 +++
