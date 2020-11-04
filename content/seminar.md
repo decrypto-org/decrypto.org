@@ -1,5 +1,6 @@
 +++
 template = "seminar.html"
+aliases = ["seminars/"]
 
 [[extra.seminars]]
 author = "Dionysis Zindros"
